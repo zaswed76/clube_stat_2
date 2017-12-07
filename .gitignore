@@ -4,3 +4,4 @@ dist
 geckodriver.log
 #club_stat/data/
 club_stat/geckodriver.log
+clubestat/log/*.log
