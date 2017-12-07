@@ -44,6 +44,8 @@ class Browser:
         return self.driver.find_element_by_id(field).text
 
 if __name__ == '__main__':
+    from clubestat import service as sv
+    from clubestat import pth
     adr = "http://adminold.itland.enes.tech/index.php/map"
     login_id = 'enter_login'
     password_id = 'enter_password'
@@ -52,7 +54,7 @@ if __name__ == '__main__':
     password = "fasadAQ9"
 
 
-    cfg = config.load(pth.CONFIG_PATH)
+    cfg = sv.load(pth.CONFIG_PATH)
     driver_pth = os.path.join(pth.DRIVERS_DIR, cfg["driver"])
 
     binary_pth = os.path.abspath(cfg["binary_browser_pth"])
@@ -60,16 +62,12 @@ if __name__ == '__main__':
     browser = Browser(driver_pth, binary_pth)
     browser.get_page(adr)
     assert "Shell" in browser.driver.title
-    while True:
-        login = passw.get_log()
-        password = passw.get_pass()
-        browser.log_in(login_id, password_id, submit_name, login, password)
-        if "Карта клуба" in browser.driver.title:
-            print("вошли в карту клуба")
-            break
+    # while True:
+    #     login = passw.get_log()
+    #     password = passw.get_pass()
+    #     browser.log_in(login_id, password_id, submit_name, login, password)
+    #     if "Карта клуба" in browser.driver.title:
+    #         print("вошли в карту клуба")
+    #         break
 
 
-    for i in range(1, 5):
-        browser.select_club(str(i))
-        print(browser.get_data("taken"))
-        time.sleep(1)
