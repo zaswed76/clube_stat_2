@@ -24,13 +24,13 @@ def main():
     browser.get_page(adr)
     assert "Shell" in browser.driver.title
     # browser.hide_window()
-    while True:
-        login = service.get_log()
-        password = service.get_pass()
-        browser.log_in(login_id, password_id, submit_name, login, password)
-        if "Карта клуба" in browser.driver.title:
-            print("вошли в карту клуба")
-            break
+    # while True:
+    #     login = service.get_log()
+    #     password = service.get_pass()
+    #     browser.log_in(login_id, password_id, submit_name, login, password)
+    #     if "Карта клуба" in browser.driver.title:
+    #         print("вошли в карту клуба")
+    #         break
 
 
 
