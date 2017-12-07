@@ -18,6 +18,10 @@ class Browser:
 
         # self.driver.maximize_window()
 
+    def hide_window(self):
+        self.driver.set_window_position(0, 0)
+        self.driver.set_window_size(-1000, 0)
+
     def get_driver(self):
         capabilities = {'chrome.binary': self.binary_pth}
         driver = webdriver.Remote(self.service.service_url, capabilities)
