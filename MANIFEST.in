@@ -1,5 +1,5 @@
 
-recursive-include clubstat/etc *.yaml
-recursive-include clubstat/data *
-recursive-include clubstat/drivers *.exe
+recursive-include clubestat/etc *.yaml
+recursive-include clubestat/data *
+recursive-include clubestat/drivers *.exe
 
