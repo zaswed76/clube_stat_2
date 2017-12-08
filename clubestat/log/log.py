@@ -14,10 +14,11 @@ handler.setFormatter(formatter)
 handler.setLevel(logging.DEBUG)
 log.addHandler(handler)
 
-handler = logging.FileHandler('scr.log', 'a')
+handler = logging.FileHandler('./scr.log', 'a')
 handler.setLevel(logging.WARNING)
 handler.setFormatter(formatter)
 log.addHandler(handler)
 
 if __name__ == '__main__':
-    log.exception()
+    log.debug("www")
+    log.error("www")

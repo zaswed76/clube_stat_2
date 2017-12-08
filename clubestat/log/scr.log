@@ -2,3 +2,5 @@
 'main '2017-12-06 12:12:47.765 ERROR  at line 10: [Errno 2] No such file or directory: ''
 ------------
 'main '2017-12-06 12:14:02.300 CRITICAL  at line 10: [Errno 2] No such file or directory: ''
+------------
+'log '2017-12-08 09:08:40.541 ERROR  at line 24: www
