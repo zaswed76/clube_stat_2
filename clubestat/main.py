@@ -1,15 +1,11 @@
-
 import os
 import time
 from clubestat import service, pth
 from clubestat.log.log import log
 from clubestat.browser import Browser
+import win32gui, win32con
 
 _cfg = service.load(pth.CONFIG_PATH)
-
-
-
-
 
 
 def main():
@@ -23,16 +19,17 @@ def main():
     browser = Browser(driver_pth, binary_pth)
     browser.get_page(adr)
     assert "Shell" in browser.driver.title
-    browser.hide_window()
+    win32gui.ShowWindow(win32gui.GetForegroundWindow(),
+                        win32con.SW_MINIMIZE)
+    # browser.hide_window()
     while True:
         login = service.get_log()
         password = service.get_pass()
-        browser.log_in(login_id, password_id, submit_name, login, password)
+        browser.log_in(login_id, password_id, submit_name, login,
+                       password)
         if "Карта клуба" in browser.driver.title:
             print("вошли в карту клуба")
             break
-
-
 
 
 if __name__ == '__main__':
