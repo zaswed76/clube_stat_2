@@ -19,7 +19,7 @@ class Browser:
         # self.driver.maximize_window()
 
     def hide_window(self):
-        self.driver.set_window_position(-10000, 0)
+        self.driver.set_window_position(0, 0)
 
 
     def get_driver(self):

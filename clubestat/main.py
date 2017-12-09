@@ -23,7 +23,7 @@ def main():
     browser = Browser(driver_pth, binary_pth)
     browser.get_page(adr)
     assert "Shell" in browser.driver.title
-    # browser.hide_window()
+    browser.hide_window()
     while True:
         login = service.get_log()
         password = service.get_pass()
