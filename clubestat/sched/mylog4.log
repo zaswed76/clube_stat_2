@@ -1,0 +1,23 @@
+t1.py[LINE:20]# WARNING  [2017-12-09 09:52:15,656]  старт
+t1.py[LINE:14]# WARNING  [2017-12-09 09:55:00,002]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 09:55:00,002]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:00:00,003]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:00:00,003]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:05:00,003]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:05:00,003]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:10:00,002]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:10:00,002]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:15:00,002]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:15:00,002]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:20:00,002]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:20:00,002]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:25:00,004]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:25:00,004]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:30:00,006]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:30:00,006]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:35:00,005]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:35:00,005]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:40:00,002]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:40:00,002]  This is an info message
+t1.py[LINE:14]# WARNING  [2017-12-09 10:45:00,002]  info
+t1.py[LINE:15]# ERROR    [2017-12-09 10:45:00,002]  This is an info message
