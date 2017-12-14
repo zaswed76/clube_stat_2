@@ -1,7 +1,7 @@
 
 def table():
     table = """\
-    CREATE TABLE club
+    CREATE TABLE club_tab
     (
     dt DATA,
     data_time TIMESTAMP,
@@ -9,10 +9,10 @@ def table():
     mminute MINUTE,
     club TEXT,
     class TEXT,
-    data-id TEXT,
-    data-ip TEXT,
-    data-mac TEXT,
-    data-unauth TEXT,
+    data_id TEXT,
+    data_ip TEXT,
+    data_mac TEXT,
+    data_unauth TEXT,
     id TEXT,
     title TEXT
     );

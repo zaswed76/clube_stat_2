@@ -28,6 +28,9 @@ def table():
 def ins_club_stat():
     return 'insert into club values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
 
+def ins_table_stat():
+    return 'insert into club_tab values (?,?,?,?,?,?,?,?,?,?,?,?)'
+
 def seq_line():
     d = datetime.datetime.now().date()
     dt = datetime.datetime.now()
@@ -79,11 +82,14 @@ class Keeper():
 
         try:
             self.cursor.executescript(table)
-        except sqlite3.OperationalError:
-            pass
+        except sqlite3.OperationalError as er:
+            print(er)
 
     def add_line(self, ins, seq):
         self.cursor.execute(ins, seq)
+
+    def add_lines(self, ins, seq):
+        self.cursor.executemany(ins, seq)
 
     def open_connect(self):
         self.connect = sqlite3.connect(self.path)
@@ -178,12 +184,17 @@ if __name__ == '__main__':
     # region открыть базу
     # path = "data.db"
     import os
-    from club_stat import pth
-    path = os.path.join(pth.DATA_DIR, "data.sql")
+    from clubestat import pth
+    from clubestat.db import map_sql_table
+    path = os.path.join(pth.DATA_DIR, "table.sql")
     kp = Keeper(path)
     kp.open_connect()
     kp.open_cursor()
-    kp.seq_print(kp.sample_all())
+
+    # kp.close()
+    kp.cursor.execute("select * from club_tab")
+    kp.cursor.fetchall()
+
     # Keeper.seq_print(kp.sample_all())
     # region Description
     # r = kp.sample_hour("28.09.2017 09:00:00", "28.09.2017 23:00:00")
