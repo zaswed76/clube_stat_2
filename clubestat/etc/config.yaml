@@ -1,4 +1,5 @@
 web_adr: "http://adminold.itland.enes.tech/index.php/map"
 driver: "chromedriver.exe"
 binary_browser_pth: "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+sql_data: "table.sql"
 

@@ -1,8 +1,10 @@
 import os
+
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import selenium.webdriver.chrome.service as service
-import win32gui, win32con
+
 
 
 class Browser:
@@ -13,11 +15,6 @@ class Browser:
         self.service = service.Service(self.driver_pth)
         self.service.start()
         self.driver = self.get_driver()
-
-
-
-
-        # self.driver.maximize_window()
 
     def hide_window(self):
         self.driver.set_window_position(0, 0)
@@ -41,16 +38,51 @@ class Browser:
         m = self.driver.find_element_by_class_name(submit_name)
         m.click()
 
+    def get_table(self):
+        table = []
+        text = self.driver.page_source
+        soup = BeautifulSoup(text)
+        soup_table = soup.find('table', id="map")
+        for tr in soup_table.find_all('tr'):
+            for i in tr:
+                r = i.findAll("span")
+                if r:
+                    tag = r[0]
+                    line = (
+                    tag["class"],
+                    tag["data-id"],
+                    tag["data-ip"],
+                    tag["data-mac"],
+                    tag["data-unauth"],
+                    tag["id"],
+                    tag["title"])
+                    table.append(line)
+        return table
+
+
     def select_club(self, club:str):
         select = Select(self.driver.find_element_by_id('club_id'))
         select.select_by_value(club)
 
+    def select_club_by_name(self, club_name):
+        select = Select(self.driver.find_element_by_id('club_id'))
+        select.select_by_visible_text(club_name)
+
     def get_data(self, field):
         return self.driver.find_element_by_id(field).text
+
+    def close(self):
+        self.driver.quit()
 
 if __name__ == '__main__':
     from clubestat import service as sv
     from clubestat import pth
+    from clubestat.clubs.club import Club, Clubs
+    from clubestat.db import sql_keeper, map_sql_table
+    import time
+    import pprint
+    clubs = Clubs()
+    clubs.add_club(Club(Club.LES, 40))
     adr = "http://adminold.itland.enes.tech/index.php/map"
     login_id = 'enter_login'
     password_id = 'enter_password'
@@ -60,19 +92,26 @@ if __name__ == '__main__':
 
 
     cfg = sv.load(pth.CONFIG_PATH)
-    driver_pth = os.path.join(pth.DRIVERS_DIR, cfg["driver"])
 
+    driver_pth = os.path.join(pth.DRIVERS_DIR,
+                                  cfg["driver"])
     binary_pth = os.path.abspath(cfg["binary_browser_pth"])
+    driver = Browser(driver_pth, binary_pth)
+    driver.get_page(adr)
+    driver.log_in(login_id, password_id, submit_name,
+                            login, password)
 
-    browser = Browser(driver_pth, binary_pth)
-    browser.get_page(adr)
-    assert "Shell" in browser.driver.title
-    # while True:
-    #     login = passw.get_log()
-    #     password = passw.get_pass()
-    #     browser.log_in(login_id, password_id, submit_name, login, password)
-    #     if "Карта клуба" in browser.driver.title:
-    #         print("вошли в карту клуба")
-    #         break
+
+    # driver.select_club("4")
+    driver.select_club_by_name(clubs["les"].field_name)
+    time.sleep(3)
+
+    table  = driver.get_table()
+
+    keeper = sql_keeper.Keeper(os.path.join(pth.DATA_DIR, cfg["sql_data"]))
+    keeper.open_connect()
+    keeper.open_cursor()
+    keeper.create_table(map_sql_table.table())
+    # driver.close()
 
 
