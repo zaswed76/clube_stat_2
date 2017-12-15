@@ -40,16 +40,17 @@ class Browser:
     def get_table(self):
         table = []
         text = self.driver.page_source
-        soup = BeautifulSoup(text)
+        soup = BeautifulSoup(text, "lxml")
         soup_table = soup.find('table', id="map")
         for tr in soup_table.find_all('tr'):
             for i in tr:
                 r = i.findAll("span")
-
                 if r:
                     tag = r[0]
-                    usr = user.User(tag["title"])
-                    print(tag["title"])
+                    title = tag["title"]
+                    if title:
+                        print(user.user(title))
+
         #             line = (
         #                 tag.text,
         #                 tag["class"][1],
@@ -107,7 +108,7 @@ if __name__ == '__main__':
 
     # driver.select_club("4")
     driver.select_club_by_name(clubs["les"].field_name)
-    time.sleep(3)
+    time.sleep(2)
 
     table = driver.get_table()
     #
