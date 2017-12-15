@@ -8,6 +8,7 @@ def table():
     mhour HOUR,
     mminute MINUTE,
     club TEXT,
+    ncomp TEXT,
     class TEXT,
     data_id TEXT,
     data_ip TEXT,
