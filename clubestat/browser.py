@@ -47,8 +47,8 @@ class Browser:
                 r = i.findAll("span")
                 if r:
                     tag = r[0]
-                    # print(tag)
-                    # print("----------------")
+                    print(tag)
+                    print("----------------")
                     title = tag["title"]
                     if title:
                         print(user.user(title))
@@ -91,6 +91,7 @@ if __name__ == '__main__':
 
     clubs = Clubs()
     clubs.add_club(Club(Club.LES, 40))
+    clubs.add_club(Club(Club.TROYA, 40))
     adr = "http://adminold.itland.enes.tech/index.php/map"
     login_id = 'enter_login'
     password_id = 'enter_password'
@@ -109,7 +110,7 @@ if __name__ == '__main__':
                   login, password)
 
     # driver.select_club("4")
-    driver.select_club_by_name(clubs["les"].field_name)
+    driver.select_club_by_name(clubs["troya"].field_name)
     time.sleep(2)
 
     table = driver.get_table()
