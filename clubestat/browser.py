@@ -47,6 +47,8 @@ class Browser:
                 r = i.findAll("span")
                 if r:
                     tag = r[0]
+                    # print(tag)
+                    # print("----------------")
                     title = tag["title"]
                     if title:
                         print(user.user(title))
