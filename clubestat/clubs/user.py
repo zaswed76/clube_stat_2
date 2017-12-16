@@ -1,6 +1,6 @@
+import copy
 import datetime
 import re
-import copy
 
 from bs4 import BeautifulSoup
 
@@ -74,9 +74,14 @@ class User:
         return get_subscription(self.title, SUBSCRIPTION_PATTERN)
 
     @property
-    def timestart(self):
+    def time_start(self):
         return get_date_start(self.title)
 
+    def __repr__(self):
+        return "{}; {}, {}; {}, {}".format(self.login, self.level,
+                                           self.discount,
+                                           self.time_start,
+                                           self.subscription)
 
 
 if __name__ == '__main__':
@@ -90,5 +95,5 @@ if __name__ == '__main__':
     #
 
     # # print(result2)
-    usr = user(line)
+    usr = User(line)
     print(usr)

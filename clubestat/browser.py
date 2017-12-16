@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import selenium.webdriver.chrome.service as service
-from clubestat.clubs import user
+from clubestat.clubs.user import User
 
 
 class Browser:
@@ -47,11 +47,11 @@ class Browser:
                 r = i.findAll("span")
                 if r:
                     tag = r[0]
-                    print(tag)
-                    print("----------------")
                     title = tag["title"]
                     if title:
-                        print(user.user(title))
+                        usr = User(title)
+                        print(usr)
+                        print("----------------")
 
         #             line = (
         #                 tag.text,
@@ -110,7 +110,7 @@ if __name__ == '__main__':
                   login, password)
 
     # driver.select_club("4")
-    driver.select_club_by_name(clubs["troya"].field_name)
+    driver.select_club_by_name(clubs["les"].field_name)
     time.sleep(2)
 
     table = driver.get_table()
