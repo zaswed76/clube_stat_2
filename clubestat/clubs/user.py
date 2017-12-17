@@ -50,16 +50,23 @@ def get_subscription(line, p):
 
 class User:
     def __init__(self, title):
-        if title:
-            self.title = norm(title)
-            self.soup = BeautifulSoup(title, "lxml")
-            self.soup_copy = copy.deepcopy(self.soup)
-            self.soup_copy.strong.decompose()
+        assert isinstance(title, str)
+        self.title = norm(title)
+        self.soup = BeautifulSoup(title, "lxml")
+        self.soup_copy = copy.deepcopy(self.soup)
+        strong = self.soup_copy.strong
+        try:
+            strong.decompose()
+        except AttributeError:
+            pass
+        else:
             self.title = self.soup_copy.get_text()
 
     @property
     def login(self):
-        return self.soup.find("strong").get_text()
+        tag = self.soup.find("strong")
+        if tag is not None:
+            return tag.get_text()
 
     @property
     def level(self):
@@ -95,5 +102,6 @@ if __name__ == '__main__':
     #
 
     # # print(result2)
-    usr = User(line)
-    print(usr)
+    usr = User([])
+    print(usr.login)
+    # print(usr)

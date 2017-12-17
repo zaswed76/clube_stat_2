@@ -1,9 +1,11 @@
+import datetime
 import os
 
+import selenium.webdriver.chrome.service as service
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-import selenium.webdriver.chrome.service as service
+
 from clubestat.clubs.user import User
 
 
@@ -50,31 +52,42 @@ class Browser:
                     title = tag["title"]
                     if title:
                         usr = User(title)
-                        print(usr)
-                        print("----------------")
+                        login = usr.login
+                        level = usr.level
+                        discount = usr.discount
+                        subscription = usr.subscription
+                        time_start = usr.time_start["datetime"]
+                    else:
+                        login, level, discount, subscription, time_start = (
+                            None, None, None, None, None)
 
-        #             line = (
-        #                 tag.text,
-        #                 tag["class"][1],
-        #                 tag["data-id"],
-        #                 tag["data-ip"],
-        #                 tag["data-mac"],
-        #                 tag["data-unauth"],
-        #                 tag["id"],
-        #                 tag["title"])
-        #             table.append(line)
-        # return table
+                    line = (
+                        tag.text,
+                        tag["class"][1],
+                        tag["data-id"],
+                        tag["data-ip"],
+                        tag["data-mac"],
+                        tag["data-unauth"],
+                        tag["id"],
+                        login, level, discount, subscription,
+                        time_start)
+                    table.append(line)
+        return table
+
 
     def select_club(self, club: str):
         select = Select(self.driver.find_element_by_id('club_id'))
         select.select_by_value(club)
 
+
     def select_club_by_name(self, club_name):
         select = Select(self.driver.find_element_by_id('club_id'))
         select.select_by_visible_text(club_name)
 
+
     def get_data(self, field):
         return self.driver.find_element_by_id(field).text
+
 
     def close(self):
         self.driver.quit()
@@ -83,11 +96,9 @@ class Browser:
 if __name__ == '__main__':
     from clubestat import service as sv
     from clubestat import pth
+    from clubestat.db import map_sql_table, sql_keeper
     from clubestat.clubs.club import Club, Clubs
-    from clubestat.db import sql_keeper, map_sql_table
     import time
-    import datetime
-    import pprint
 
     clubs = Clubs()
     clubs.add_club(Club(Club.LES, 40))
@@ -115,30 +126,30 @@ if __name__ == '__main__':
 
     table = driver.get_table()
     #
-    # keeper = sql_keeper.Keeper(
-    #     os.path.join(pth.DATA_DIR, cfg["sql_data"]))
-    # keeper.open_connect()
-    # keeper.open_cursor()
-    # keeper.create_table(map_sql_table.table())
-    #
-    # date_time = datetime.datetime.now()
-    # date = date_time.date()
-    # h = date_time.time().hour
-    # minute = date_time.time().minute
-    # club = clubs["les"].field_name
-    #
-    # seq = []
-    # s = [date, date_time, h, minute, club]
-    # temp_lst = []
-    # for line in table:
-    #     # print(line)
-    #     # print("--------------")
-    #     temp_lst.extend(s)
-    #     temp_lst.extend(line)
-    #     seq.append(temp_lst.copy())
-    #     temp_lst.clear()
-    #
-    # keeper.add_lines(sql_keeper.ins_table_stat(), seq)
-    # keeper.commit()
-    # keeper.close()
-    # driver.close()
+    keeper = sql_keeper.Keeper(
+        os.path.join(pth.DATA_DIR, cfg["sql_data"]))
+    keeper.open_connect()
+    keeper.open_cursor()
+    keeper.create_table(map_sql_table.table())
+
+    date_time = datetime.datetime.now()
+    date = date_time.date()
+    h = date_time.time().hour
+    minute = date_time.time().minute
+    club = clubs["les"].field_name
+
+    seq = []
+    s = [date, date_time, h, minute, club]
+    temp_lst = []
+    for line in table:
+        # print(line)
+        # print("--------------")
+        temp_lst.extend(s)
+        temp_lst.extend(line)
+        seq.append(temp_lst.copy())
+        temp_lst.clear()
+
+    keeper.add_lines(sql_keeper.ins_table_stat(), seq)
+    keeper.commit()
+    keeper.close()
+    driver.close()

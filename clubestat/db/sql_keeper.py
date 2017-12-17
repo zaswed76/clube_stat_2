@@ -29,7 +29,7 @@ def ins_club_stat():
     return 'insert into club values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
 
 def ins_table_stat():
-    return 'insert into club_tab values (?,?,?,?,?,?,?,?,?,?,?,?,?)'
+    return 'insert into club_tab values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
 
 def seq_line():
     d = datetime.datetime.now().date()
@@ -192,7 +192,7 @@ if __name__ == '__main__':
     kp.open_cursor()
 
     # kp.close()
-    kp.cursor.execute("select * from club_tab")
+    kp.cursor.execute("select * from club_tab WHERE NOT subscription = 'None'")
     for i in kp.cursor.fetchall():
         print(i)
         print("--------------")

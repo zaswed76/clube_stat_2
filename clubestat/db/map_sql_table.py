@@ -15,7 +15,11 @@ def table():
     data_mac TEXT,
     data_unauth TEXT,
     id TEXT,
-    title TEXT
+    login TEXT,
+    level TEXT,
+    discount TEXT,
+    subscription TEXT,
+    time_start TIMESTAMP
     );
 """
     return table
