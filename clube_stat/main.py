@@ -2,6 +2,8 @@ import os
 import time
 
 import sys
+
+import datetime
 import selenium
 import win32gui, win32con
 
@@ -49,11 +51,41 @@ def get_clubs():
     clubs.add_club(Club(Club.DREAM, 50))
     return clubs
 
-def write_data():
-    pass
+def write_data(browser, keeper, club):
+    keeper.open_connect()
+    keeper.open_cursor()
+    table = browser.get_table()
+    log.debug("get table")
+    date_time = datetime.datetime.now()
+    date = date_time.date()
+    h = date_time.time().hour
+    minute = date_time.time().minute
+    club_name = club.field_name
 
-def read_data(browser, clubs):
+    seq = []
+    log.debug("klub --- {}".format(club_name))
+    s = [date, date_time, h, minute, club_name]
+    temp_lst = []
+    for line in table:
+        # print(line)
+        # print("--------------")
+        temp_lst.extend(s)
+        temp_lst.extend(line)
+        seq.append(temp_lst.copy())
+        temp_lst.clear()
+
+    keeper.add_lines(sql_keeper.ins_table_stat(), seq)
+    keeper.commit()
+    keeper.close()
+
+def read_data(browser, clubs, keeper):
     for club in clubs.values():
+        if browser.driver.title != "Карта клуба":
+            log.error("club card is not open")
+            browser.close()
+            log.debug("browser close")
+            time.sleep(2)
+            return False
         try:
             browser.select_club_by_name(club.field_name)
         except Exception as er:
@@ -63,7 +95,7 @@ def read_data(browser, clubs):
             time.sleep(2)
             return False
         else:
-            table = browser.get_table()
+            write_data(browser, keeper, club)
             log.debug("right in data - OK")
             time.sleep(4)
     else:
@@ -71,16 +103,16 @@ def read_data(browser, clubs):
 def scr_run(driver_pth, binary_pth, adr, clubs, login, password):
     errors = 0
     keeper = sql_keeper.Keeper(
-        os.path.join(pth.DATA_DIR, _cfg["sql_data"]))
+        os.path.join(pth.DATA_FILE))
     keeper.open_connect()
     keeper.open_cursor()
     keeper.create_table(map_sql_table.table())
+    keeper.close()
     while True:
         browser = Browser(driver_pth, binary_pth)
         hide_browser(HIDE)
         # зайти на страницу
         browser.get_page(adr)
-
         assert "Shell" in browser.driver.title
         time.sleep(1)
         # скрыть браузер
@@ -89,7 +121,7 @@ def scr_run(driver_pth, binary_pth, adr, clubs, login, password):
         log_in(browser, login, password)
         time.sleep(1)
         # получить данные
-        result = read_data(browser, clubs)
+        result = read_data(browser, clubs, keeper)
         # данные получены без ошибок
         if result:
             log.debug("end; count error - {}".format(errors))

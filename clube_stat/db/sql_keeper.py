@@ -187,18 +187,20 @@ if __name__ == '__main__':
     # region открыть базу
     # path = "data.db"
     import os
-    from clubestat import pth
+    from clube_stat import pth
     from clube_stat.db import map_sql_table
-    path = os.path.join(pth.DATA_DIR, "table.sql")
+    path = os.path.join(pth.DATA_FILE)
     kp = Keeper(path)
     kp.open_connect()
     kp.open_cursor()
 
     # kp.close()
-    kp.cursor.execute("select * from club_tab")
-    for i in kp.cursor.fetchall():
+    kp.cursor.execute("select * from club_tab WHERE club = 'IT Land Troya'")
+    res = kp.cursor.fetchall()
+    for i in res:
         print(i)
         print("--------------")
+    print(len(res))
 
     # Keeper.seq_print(kp.sample_all())
     # region Description

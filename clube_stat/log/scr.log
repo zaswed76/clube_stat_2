@@ -52,3 +52,47 @@
 ------------
     'main '2017-12-18 19:30:05.418 WARNING  at line 95: 
 ##### - start program - ######
+------------
+    'main '2017-12-18 21:51:04.574 WARNING  at line 110: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 21:51:50.372 WARNING  at line 123: 
+    ##### - END PROGRAM - ######
+------------
+    'main '2017-12-18 21:55:13.967 WARNING  at line 115: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 21:55:51.711 ERROR  at line 58: club card is not open
+------------
+    'main '2017-12-18 21:55:53.772 ERROR  at line 105: error; count error - 1
+------------
+    'main '2017-12-18 21:56:25.823 WARNING  at line 128: 
+    ##### - END PROGRAM - ######
+------------
+    'main '2017-12-18 22:04:51.100 WARNING  at line 137: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 22:05:06.789 WARNING  at line 137: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 22:10:09.166 WARNING  at line 140: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 22:20:39.886 WARNING  at line 141: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 22:21:21.232 WARNING  at line 154: 
+    ##### - END PROGRAM - ######
+------------
+    'main '2017-12-18 22:33:52.210 WARNING  at line 142: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-18 22:34:38.14 WARNING  at line 155: 
+    ##### - END PROGRAM - ######
