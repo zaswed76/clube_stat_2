@@ -69,7 +69,6 @@ class Club:
         if pro_comps is not None:
             self.pro_comps = pro_comps
         else: self.pro_comps = []
-        print(self.pro_comps)
         self.max_visitor = max_visitor
         self.store ={}
         self.name = club_name

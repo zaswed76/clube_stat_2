@@ -4,7 +4,7 @@ import time
 import sys
 
 import datetime
-import selenium
+from apscheduler.schedulers.blocking import BlockingScheduler
 import win32gui, win32con
 
 from clube_stat import service, pth
@@ -13,23 +13,22 @@ from clube_stat.browser import Browser
 from clube_stat.db import sql_keeper, map_sql_table
 from clube_stat.clubs.club import Club, Clubs
 
-
 _cfg = service.load(pth.CONFIG_PATH)
 log = lg.log(os.path.join(pth.LOG_DIR, "scr.log"))
 HIDE = False
 LIMIT_ERROR = 3
+
+
 def hide_browser(v):
     if v:
         win32gui.ShowWindow(win32gui.GetForegroundWindow(),
-                        win32con.SW_MINIMIZE)
+                            win32con.SW_MINIMIZE)
+
 
 def log_in(browser, login, password):
     login_id = 'enter_login'
     password_id = 'enter_password'
     submit_name = 'but_m'
-
-
-    log.debug("log - {}, pass - {}".format(login, password))
     browser.log_in(login_id, password_id, submit_name, login,
                    password)
     time.sleep(2)
@@ -43,13 +42,16 @@ def log_in(browser, login, password):
         browser.close()
         sys.exit(1)
 
+
 def get_clubs():
     clubs = Clubs()
-    clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
+    clubs.add_club(
+        Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
     clubs.add_club(Club(Club.TROYA, 50))
     clubs.add_club(Club(Club.AKADEM, 50))
     clubs.add_club(Club(Club.DREAM, 50))
     return clubs
+
 
 def write_data(browser, keeper, club):
     keeper.open_connect()
@@ -63,7 +65,7 @@ def write_data(browser, keeper, club):
     club_name = club.field_name
 
     seq = []
-    log.debug("klub --- {}".format(club_name))
+
     s = [date, date_time, h, minute, club_name]
     temp_lst = []
     for line in table:
@@ -76,7 +78,9 @@ def write_data(browser, keeper, club):
 
     keeper.add_lines(sql_keeper.ins_table_stat(), seq)
     keeper.commit()
+    log.warning("klub - < {} > write".format(club_name))
     keeper.close()
+
 
 def read_data(browser, clubs, keeper):
     for club in clubs.values():
@@ -102,6 +106,8 @@ def read_data(browser, clubs, keeper):
             time.sleep(4)
     else:
         return True
+
+
 def scr_run(driver_pth, binary_pth, adr, clubs, login, password):
     errors = 0
     keeper = sql_keeper.Keeper(
@@ -141,24 +147,26 @@ def scr_run(driver_pth, binary_pth, adr, clubs, login, password):
 
 
 def main():
-    log.warning("\n    ##### - START PROGRAM - ######\n")
+
     clubs = get_clubs()
     adr = _cfg["web_adr"]
     driver_pth = os.path.join(pth.DRIVERS_DIR, _cfg["driver"])
     binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
 
-
-    #открыть браузер
+    # открыть браузер
     login = service.get_log()
     password = service.get_pass()
+    log.warning("\n    ##### - START PROGRAM - ######\n")
 
+    # scr_run(driver_pth, binary_pth, adr, clubs, login, password)
 
+    args = [driver_pth, binary_pth, adr, clubs, login, password]
+    sched = BlockingScheduler()
+    sched.add_job(scr_run, 'interval', args, minutes=5,
+                  start_date="2017-12-9 09:00:00")
 
-    scr_run(driver_pth, binary_pth, adr, clubs, login, password)
+    sched.start()
     log.warning("\n    ##### - END PROGRAM - ######")
-
-
-
 
 if __name__ == '__main__':
     main()
