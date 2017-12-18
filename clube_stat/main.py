@@ -54,6 +54,7 @@ def main():
     for club in clubs.values():
         browser.select_club_by_name(club.field_name)
         log.debug("select by {}".format(club.field_name))
+        log.error("select by {}".format(club.field_name))
         time.sleep(2)
 
     # table = browser.get_table()
