@@ -17,6 +17,7 @@ def log_in(browser):
     while True:
         login = service.get_log()
         password = service.get_pass()
+        log.debug("log - {}, pass - {}".format(login, password))
         browser.log_in(login_id, password_id, submit_name, login,
                        password)
         time.sleep(2)
