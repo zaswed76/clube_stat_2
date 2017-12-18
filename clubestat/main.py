@@ -3,25 +3,15 @@ import time
 from clubestat import service, pth
 from clubestat.log.log import log
 from clubestat.browser import Browser
+from clubestat.clubs.club import Club, Clubs
 import win32gui, win32con
 
 _cfg = service.load(pth.CONFIG_PATH)
 
-
-def main():
+def log_in(browser):
     login_id = 'enter_login'
     password_id = 'enter_password'
     submit_name = 'but_m'
-    adr = _cfg["web_adr"]
-    driver_pth = os.path.join(pth.DRIVERS_DIR, _cfg["driver"])
-    binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
-
-    browser = Browser(driver_pth, binary_pth)
-    browser.get_page(adr)
-    assert "Shell" in browser.driver.title
-    win32gui.ShowWindow(win32gui.GetForegroundWindow(),
-                        win32con.SW_MINIMIZE)
-    # browser.hide_window()
     while True:
         login = service.get_log()
         password = service.get_pass()
@@ -31,6 +21,37 @@ def main():
             print("вошли в карту клуба")
             break
 
+def get_clubs():
+    clubs = Clubs()
+    clubs.add_club(Club(Club.LES, 50))
+    clubs.add_club(Club(Club.TROYA, 50))
+    clubs.add_club(Club(Club.AKADEM, 50))
+    clubs.add_club(Club(Club.DREAM, 50))
+    return clubs
+
+def main():
+    clubs = get_clubs()
+    adr = _cfg["web_adr"]
+    driver_pth = os.path.join(pth.DRIVERS_DIR, _cfg["driver"])
+    binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
+
+    #открыть браузер
+    browser = Browser(driver_pth, binary_pth)
+    # зайти на страницу
+    browser.get_page(adr)
+    assert "Shell" in browser.driver.title
+    # скрыть браузер
+    win32gui.ShowWindow(win32gui.GetForegroundWindow(),
+                        win32con.SW_MINIMIZE)
+    #  залогинится
+    log_in(browser)
+
+    for club in clubs.values():
+        browser.select_club_by_name(club.field_name)
+        log.debug("select by {}".format(club.field_name))
+        time.sleep(2)
+    #
+    # table = browser.get_table()
 
 if __name__ == '__main__':
     main()

@@ -1,5 +1,5 @@
 import datetime
-import itertools
+import os
 
 import sqlite3
 
@@ -77,9 +77,12 @@ def sort_seq(lst):
 class Keeper():
     def __init__(self, path):
         self.path = path
+        data_dir = os.path.dirname(self.path)
+        if not os.path.isdir(data_dir):
+            os.makedirs(data_dir)
+
 
     def create_table(self, table):
-
         try:
             self.cursor.executescript(table)
         except sqlite3.OperationalError as er:
@@ -192,7 +195,7 @@ if __name__ == '__main__':
     kp.open_cursor()
 
     # kp.close()
-    kp.cursor.execute("select * from club_tab WHERE NOT subscription = 'None'")
+    kp.cursor.execute("select * from club_tab")
     for i in kp.cursor.fetchall():
         print(i)
         print("--------------")

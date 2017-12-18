@@ -39,7 +39,7 @@ def get_date_start(line):
         except Exception as er:
             pass
         else:
-            return {"line": d, "datetime": dt}
+            return dt
 
 
 def get_subscription(line, p):
