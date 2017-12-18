@@ -187,15 +187,23 @@ if __name__ == '__main__':
     # region открыть базу
     # path = "data.db"
     import os
-    from clube_stat import pth
+    from clube_stat import pth, service
+    from clube_stat.clubs.club import Clubs, Club
     from clube_stat.db import map_sql_table
     path = os.path.join(pth.DATA_FILE)
     kp = Keeper(path)
     kp.open_connect()
     kp.open_cursor()
 
-    # kp.close()
-    kp.cursor.execute("select * from club_tab WHERE club = 'IT Land Troya'")
+    _cfg = service.load(pth.CONFIG_PATH)
+    clubs = Clubs()
+    clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
+    pro_les = clubs["les"].pro_comps
+    sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
+        seq=','.join(['?']*len(pro_les)))
+
+
+    kp.cursor.execute(sql_, pro_les)
     res = kp.cursor.fetchall()
     for i in res:
         print(i)

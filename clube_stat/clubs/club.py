@@ -65,7 +65,11 @@ class Club:
         dream="IT Land DreamTown"
     )
 
-    def __init__(self, club_name, max_visitor, **kwargs):
+    def __init__(self, club_name, max_visitor, pro_comps=None, **kwargs):
+        if pro_comps is not None:
+            self.pro_comps = pro_comps
+        else: self.pro_comps = []
+        print(self.pro_comps)
         self.max_visitor = max_visitor
         self.store ={}
         self.name = club_name

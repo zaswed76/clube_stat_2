@@ -45,7 +45,7 @@ def log_in(browser, login, password):
 
 def get_clubs():
     clubs = Clubs()
-    clubs.add_club(Club(Club.LES, 50))
+    clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
     clubs.add_club(Club(Club.TROYA, 50))
     clubs.add_club(Club(Club.AKADEM, 50))
     clubs.add_club(Club(Club.DREAM, 50))
@@ -80,6 +80,7 @@ def write_data(browser, keeper, club):
 
 def read_data(browser, clubs, keeper):
     for club in clubs.values():
+
         if browser.driver.title != "Карта клуба":
             log.error("club card is not open")
             browser.close()
@@ -95,6 +96,7 @@ def read_data(browser, clubs, keeper):
             time.sleep(2)
             return False
         else:
+            time.sleep(3)
             write_data(browser, keeper, club)
             log.debug("right in data - OK")
             time.sleep(4)
@@ -144,6 +146,7 @@ def main():
     adr = _cfg["web_adr"]
     driver_pth = os.path.join(pth.DRIVERS_DIR, _cfg["driver"])
     binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
+
 
     #открыть браузер
     login = service.get_log()
