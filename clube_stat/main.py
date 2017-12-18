@@ -11,7 +11,11 @@ import win32gui, win32con
 
 _cfg = service.load(pth.CONFIG_PATH)
 log = lg.log(os.path.join(pth.LOG_DIR, "scr.log"))
-
+HIDE = False
+def hide_browser(v):
+    if v:
+        win32gui.ShowWindow(win32gui.GetForegroundWindow(),
+                        win32con.SW_MINIMIZE)
 
 def log_in(browser):
     login_id = 'enter_login'
@@ -50,12 +54,12 @@ def main():
 
     #открыть браузер
     browser = Browser(driver_pth, binary_pth)
+    hide_browser(HIDE)
     # зайти на страницу
     browser.get_page(adr)
     assert "Shell" in browser.driver.title
     # скрыть браузер
-    win32gui.ShowWindow(win32gui.GetForegroundWindow(),
-                        win32con.SW_MINIMIZE)
+
     #  залогинится
     log_in(browser)
 
@@ -63,7 +67,7 @@ def main():
         browser.select_club_by_name(club.field_name)
         log.debug("select by {}".format(club.field_name))
         log.error("select by {}".format(club.field_name))
-        time.sleep(2)
+        time.sleep(5)
 
     # table = browser.get_table()
 
