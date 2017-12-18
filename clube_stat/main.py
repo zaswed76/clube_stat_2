@@ -17,21 +17,20 @@ def log_in(browser):
     login_id = 'enter_login'
     password_id = 'enter_password'
     submit_name = 'but_m'
-    while True:
-        login = service.get_log()
-        password = service.get_pass()
-        log.debug("log - {}, pass - {}".format(login, password))
-        browser.log_in(login_id, password_id, submit_name, login,
-                       password)
-        time.sleep(2)
-        if "Карта клуба" in browser.driver.title:
-            print("вошли в карту клуба")
-            break
-        else:
-            log.error("не правильная пара логин - пароль")
-            input("нажмите что бы выйти")
-            browser.close()
-            sys.exit(1)
+
+    login = service.get_log()
+    password = service.get_pass()
+    log.debug("log - {}, pass - {}".format(login, password))
+    browser.log_in(login_id, password_id, submit_name, login,
+                   password)
+    time.sleep(2)
+    if "Карта клуба" in browser.driver.title:
+        print("вошли в карту клуба")
+    else:
+        log.error("не правильная пара логин - пароль")
+        input("нажмите что бы выйти")
+        browser.close()
+        sys.exit(1)
 
 def get_clubs():
     clubs = Clubs()
