@@ -3,7 +3,8 @@ import yaml
 
 
 def get_pass():
-    return getpass.getpass(prompt='введите пароль: ')
+    # return getpass.getpass(prompt='введите пароль: ')
+    return input("введите пароль _ ")
 
 def get_log():
     return input("введите логин _ ")
