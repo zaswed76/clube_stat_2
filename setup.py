@@ -1,12 +1,12 @@
 from os.path import join, dirname
 
-import clubestat
+import clube_stat
 from setuptools import setup, find_packages
 
 setup(
-        name="clubestat",
+        name="clube_stat",
         # в __init__ пакета
-        version=clubestat.__version__,
+        version=clube_stat.__version__,
         packages=find_packages(
                 exclude=["*.exemple", "*.exemple.*", "exemple.*",
                          "exemple"]),
@@ -18,7 +18,7 @@ setup(
         install_requires=[],
         entry_points={
             'console_scripts':
-                ['stat2 = clubestat.main:main']
+                ['stat2 = clube_stat.main:main']
         }
 
 )

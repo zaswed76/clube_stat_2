@@ -1,9 +1,9 @@
 import os
 import time
-from clubestat import service, pth
-from clubestat.log import log as lg
-from clubestat.browser import Browser
-from clubestat.clubs.club import Club, Clubs
+from clube_stat import service, pth
+from clube_stat.log import log as lg
+from clube_stat.browser import Browser
+from clube_stat.clubs.club import Club, Clubs
 import win32gui, win32con
 
 _cfg = service.load(pth.CONFIG_PATH)
