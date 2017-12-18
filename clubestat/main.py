@@ -20,6 +20,8 @@ def log_in(browser):
         if "Карта клуба" in browser.driver.title:
             print("вошли в карту клуба")
             break
+        else:
+            log.error("не правильная пара логин - пароль")
 
 def get_clubs():
     clubs = Clubs()
@@ -49,6 +51,7 @@ def main():
     for club in clubs.values():
         browser.select_club_by_name(club.field_name)
         log.debug("select by {}".format(club.field_name))
+
         time.sleep(2)
     #
     # table = browser.get_table()
