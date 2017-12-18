@@ -95,10 +95,10 @@ class Browser:
 
 
 if __name__ == '__main__':
-    from clubestat import service as sv
-    from clubestat import pth
-    from clubestat.db import map_sql_table, sql_keeper
-    from clubestat.clubs.club import Club, Clubs
+    from clube_stat import service as sv
+    from clube_stat import pth
+    from clube_stat.db import map_sql_table, sql_keeper
+    from clube_stat.clubs.club import Club, Clubs
     import time
 
     clubs = Clubs()
@@ -122,17 +122,18 @@ if __name__ == '__main__':
                   login, password)
 
     # driver.select_club("4")
+    time.sleep(5)
     driver.select_club_by_name(clubs["les"].field_name)
-    time.sleep(2)
 
-    table = driver.get_table()
     #
+    table = driver.get_table()
+    # #
     keeper = sql_keeper.Keeper(
         os.path.join(pth.DATA_DIR, cfg["sql_data"]))
     keeper.open_connect()
     keeper.open_cursor()
     keeper.create_table(map_sql_table.table())
-
+    #
     date_time = datetime.datetime.now()
     date = date_time.date()
     h = date_time.time().hour

@@ -1,7 +1,7 @@
 
 def table():
     table = """\
-    CREATE TABLE club_tab
+    CREATE TABLE IF NOT EXISTS club_tab
     (
     dt DATA,
     data_time TIMESTAMP,

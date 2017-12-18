@@ -188,7 +188,7 @@ if __name__ == '__main__':
     # path = "data.db"
     import os
     from clubestat import pth
-    from clubestat.db import map_sql_table
+    from clube_stat.db import map_sql_table
     path = os.path.join(pth.DATA_DIR, "table.sql")
     kp = Keeper(path)
     kp.open_connect()
