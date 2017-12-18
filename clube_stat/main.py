@@ -28,7 +28,7 @@ def log_in(browser):
         print("вошли в карту клуба")
     else:
         log.error("не правильная пара логин - пароль")
-        input("нажмите что бы выйти")
+        input("нажмите  < ENTER > что бы выйти")
         print("программа будет закрыта")
         time.sleep(1)
         browser.close()
