@@ -1,12 +1,14 @@
 import os
 import time
 from clubestat import service, pth
-from clubestat.log.log import log
+from clubestat.log import log as lg
 from clubestat.browser import Browser
 from clubestat.clubs.club import Club, Clubs
 import win32gui, win32con
 
 _cfg = service.load(pth.CONFIG_PATH)
+log = lg.log(os.path.join(pth.LOG_DIR, "scr.log"))
+
 
 def log_in(browser):
     login_id = 'enter_login'
@@ -51,9 +53,8 @@ def main():
     for club in clubs.values():
         browser.select_club_by_name(club.field_name)
         log.debug("select by {}".format(club.field_name))
-
         time.sleep(2)
-    #
+
     # table = browser.get_table()
 
 if __name__ == '__main__':
