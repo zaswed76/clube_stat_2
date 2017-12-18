@@ -19,6 +19,7 @@ def log_in(browser):
         password = service.get_pass()
         browser.log_in(login_id, password_id, submit_name, login,
                        password)
+        time.sleep(2)
         if "Карта клуба" in browser.driver.title:
             print("вошли в карту клуба")
             break
