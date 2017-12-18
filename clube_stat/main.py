@@ -1,5 +1,8 @@
 import os
 import time
+
+import sys
+
 from clube_stat import service, pth
 from clube_stat.log import log as lg
 from clube_stat.browser import Browser
@@ -26,6 +29,9 @@ def log_in(browser):
             break
         else:
             log.error("не правильная пара логин - пароль")
+            input("нажмите что бы выйти")
+            browser.close()
+            sys.exit(1)
 
 def get_clubs():
     clubs = Clubs()
