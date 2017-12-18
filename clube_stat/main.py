@@ -29,6 +29,8 @@ def log_in(browser):
     else:
         log.error("не правильная пара логин - пароль")
         input("нажмите что бы выйти")
+        print("программа будет закрыта")
+        time.sleep(1)
         browser.close()
         sys.exit(1)
 
