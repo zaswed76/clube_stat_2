@@ -84,10 +84,8 @@ def write_data(browser, keeper, club):
 
 def read_data(browser, clubs, keeper):
     for club in clubs.values():
-
         if browser.driver.title != "Карта клуба":
             log.error("club card is not open")
-            browser.close()
             log.debug("browser close")
             time.sleep(2)
             return False
@@ -95,7 +93,6 @@ def read_data(browser, clubs, keeper):
             browser.select_club_by_name(club.field_name)
         except Exception as er:
             log.error(er)
-            browser.close()
             log.debug("browser close")
             time.sleep(2)
             return False
@@ -108,7 +105,7 @@ def read_data(browser, clubs, keeper):
         return True
 
 
-def scr_run(driver_pth, binary_pth, adr, clubs, login, password):
+def scr_run(browser, adr, clubs, login, password):
     errors = 0
     keeper = sql_keeper.Keeper(
         os.path.join(pth.DATA_FILE))
@@ -117,16 +114,14 @@ def scr_run(driver_pth, binary_pth, adr, clubs, login, password):
     keeper.create_table(map_sql_table.table())
     keeper.close()
     while True:
-        browser = Browser(driver_pth, binary_pth)
-        hide_browser(HIDE)
         # зайти на страницу
         browser.get_page(adr)
-        assert "Shell" in browser.driver.title
         time.sleep(1)
         # скрыть браузер
 
         #  залогинится
-        log_in(browser, login, password)
+        if browser.driver.title == "Shell":
+            log_in(browser, login, password)
         time.sleep(1)
         # получить данные
         result = read_data(browser, clubs, keeper)
@@ -158,12 +153,13 @@ def main():
     password = service.get_pass()
     log.warning("\n    ##### - START PROGRAM - ######\n")
 
-    # scr_run(driver_pth, binary_pth, adr, clubs, login, password)
+    browser = Browser(driver_pth, binary_pth)
+    hide_browser(HIDE)
 
-    args = [driver_pth, binary_pth, adr, clubs, login, password]
+    args = [browser, adr, clubs, login, password]
     sched = BlockingScheduler()
-    sched.add_job(scr_run, 'interval', args, minutes=5,
-                  start_date="2017-12-9 09:00:00")
+    sched.add_job(scr_run, 'interval', args, minutes=1,
+                  start_date="2017-12-10 07:00:00")
 
     sched.start()
     log.warning("\n    ##### - END PROGRAM - ######")

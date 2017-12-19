@@ -1,189 +1,32 @@
 ------------
-    'main '2017-12-18 17:59:39.120 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:00:04.354 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:00:29.694 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:00:59.805 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:01:25.323 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:07:13.286 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:07:38.500 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:08:03.835 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 18:08:28.844 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 19:26:00.462 WARNING  at line 95: ##### - start program - ######
--------------
-------------
-    'main '2017-12-18 19:26:34.223 WARNING  at line 95: 
-##### - start program - ######
-------------
-    'main '2017-12-18 19:27:14.442 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 19:27:16.491 ERROR  at line 87: error; count error - 1
-------------
-    'main '2017-12-18 19:27:40.266 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 19:27:42.314 ERROR  at line 87: error; count error - 2
-------------
-    'main '2017-12-18 19:28:05.748 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 19:28:07.803 ERROR  at line 87: error; count error - 3
-------------
-    'main '2017-12-18 19:28:31.78 ERROR  at line 56: Message: Could not locate element with visible text: IT Land Akadems
-
-------------
-    'main '2017-12-18 19:30:05.418 WARNING  at line 95: 
-##### - start program - ######
-------------
-    'main '2017-12-18 21:51:04.574 WARNING  at line 110: 
+    'main '2017-12-19 07:48:01.190 WARNING  at line 155: 
     ##### - START PROGRAM - ######
 
 ------------
-    'main '2017-12-18 21:51:50.372 WARNING  at line 123: 
-    ##### - END PROGRAM - ######
-------------
-    'main '2017-12-18 21:55:13.967 WARNING  at line 115: 
+    'main '2017-12-19 07:49:57.858 WARNING  at line 155: 
     ##### - START PROGRAM - ######
 
 ------------
-    'main '2017-12-18 21:55:51.711 ERROR  at line 58: club card is not open
-------------
-    'main '2017-12-18 21:55:53.772 ERROR  at line 105: error; count error - 1
-------------
-    'main '2017-12-18 21:56:25.823 WARNING  at line 128: 
-    ##### - END PROGRAM - ######
-------------
-    'main '2017-12-18 22:04:51.100 WARNING  at line 137: 
+    'main '2017-12-19 07:51:10.847 WARNING  at line 155: 
     ##### - START PROGRAM - ######
 
 ------------
-    'main '2017-12-18 22:05:06.789 WARNING  at line 137: 
+    'main '2017-12-19 07:52:11.169 WARNING  at line 81: klub - < IT Land Les > write
+------------
+    'main '2017-12-19 07:52:18.610 WARNING  at line 81: klub - < IT Land Troya > write
+------------
+    'main '2017-12-19 07:52:26.26 WARNING  at line 81: klub - < IT Land Akadem > write
+------------
+    'main '2017-12-19 07:52:33.418 WARNING  at line 81: klub - < IT Land DreamTown > write
+------------
+    'main '2017-12-19 08:09:26.608 WARNING  at line 154: 
     ##### - START PROGRAM - ######
 
 ------------
-    'main '2017-12-18 22:10:09.166 WARNING  at line 140: 
-    ##### - START PROGRAM - ######
-
+    'main '2017-12-19 08:10:03.778 ERROR  at line 88: club card is not open
 ------------
-    'main '2017-12-18 22:20:39.886 WARNING  at line 141: 
-    ##### - START PROGRAM - ######
-
+    'main '2017-12-19 08:10:05.779 ERROR  at line 135: error; count error - 1
 ------------
-    'main '2017-12-18 22:21:21.232 WARNING  at line 154: 
-    ##### - END PROGRAM - ######
+    'main '2017-12-19 08:10:09.66 ERROR  at line 88: club card is not open
 ------------
-    'main '2017-12-18 22:33:52.210 WARNING  at line 142: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 22:34:38.14 WARNING  at line 155: 
-    ##### - END PROGRAM - ######
-------------
-    'main '2017-12-18 23:07:56.417 WARNING  at line 142: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 23:08:18.581 WARNING  at line 142: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 23:09:03.17 WARNING  at line 143: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 23:09:45.145 WARNING  at line 157: 
-    ##### - END PROGRAM - ######
-------------
-    'main '2017-12-18 23:16:12.313 WARNING  at line 144: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 23:17:05.336 WARNING  at line 158: 
-    ##### - END PROGRAM - ######
-------------
-    'main '2017-12-18 23:28:56.254 WARNING  at line 144: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 23:49:42.233 WARNING  at line 144: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-18 23:50:40.84 WARNING  at line 158: 
-    ##### - END PROGRAM - ######
-------------
-    'main '2017-12-19 00:36:23.271 WARNING  at line 152: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-19 00:39:03.739 WARNING  at line 159: 
-    ##### - START PROGRAM - ######
-
-------------
-    'main '2017-12-19 00:40:16.492 WARNING  at line 81: klub - < IT Land Les > write
-------------
-    'main '2017-12-19 00:40:23.932 WARNING  at line 81: klub - < IT Land Troya > write
-------------
-    'main '2017-12-19 00:40:31.445 WARNING  at line 81: klub - < IT Land Akadem > write
-------------
-    'main '2017-12-19 00:40:38.808 WARNING  at line 81: klub - < IT Land DreamTown > write
-------------
-    'main '2017-12-19 00:45:16.344 WARNING  at line 81: klub - < IT Land Les > write
-------------
-    'main '2017-12-19 00:45:23.783 WARNING  at line 81: klub - < IT Land Troya > write
-------------
-    'main '2017-12-19 00:45:31.275 WARNING  at line 81: klub - < IT Land Akadem > write
-------------
-    'main '2017-12-19 00:45:38.650 WARNING  at line 81: klub - < IT Land DreamTown > write
-------------
-    'main '2017-12-19 00:50:17.941 WARNING  at line 81: klub - < IT Land Les > write
-------------
-    'main '2017-12-19 00:50:25.328 WARNING  at line 81: klub - < IT Land Troya > write
-------------
-    'main '2017-12-19 00:50:32.841 WARNING  at line 81: klub - < IT Land Akadem > write
-------------
-    'main '2017-12-19 00:50:40.211 WARNING  at line 81: klub - < IT Land DreamTown > write
-------------
-    'main '2017-12-19 00:55:17.768 WARNING  at line 81: klub - < IT Land Les > write
-------------
-    'main '2017-12-19 00:55:25.308 WARNING  at line 81: klub - < IT Land Troya > write
-------------
-    'main '2017-12-19 00:55:32.809 WARNING  at line 81: klub - < IT Land Akadem > write
-------------
-    'main '2017-12-19 00:55:40.246 WARNING  at line 81: klub - < IT Land DreamTown > write
-------------
-    'main '2017-12-19 01:00:18.40 WARNING  at line 81: klub - < IT Land Les > write
-------------
-    'main '2017-12-19 01:00:25.499 WARNING  at line 81: klub - < IT Land Troya > write
-------------
-    'main '2017-12-19 01:00:33.0 WARNING  at line 81: klub - < IT Land Akadem > write
-------------
-    'main '2017-12-19 01:00:40.391 WARNING  at line 81: klub - < IT Land DreamTown > write
-------------
-    'main '2017-12-19 01:05:16.309 WARNING  at line 81: klub - < IT Land Les > write
-------------
-    'main '2017-12-19 01:05:23.728 WARNING  at line 81: klub - < IT Land Troya > write
-------------
-    'main '2017-12-19 01:05:31.241 WARNING  at line 81: klub - < IT Land Akadem > write
-------------
-    'main '2017-12-19 01:05:38.619 WARNING  at line 81: klub - < IT Land DreamTown > write
-------------
-    'main '2017-12-19 01:10:16.23 WARNING  at line 81: klub - < IT Land Les > write
+    'main '2017-12-19 08:10:11.67 ERROR  at line 135: error; count error - 2
