@@ -31,19 +31,15 @@ class Main:
         self.binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
         self.login = service.get_log()
         self.password = service.get_pass()
-        log.warning("\n    ##### - START PROGRAM - ######\n")
+
         self.browser = Browser(self.driver_pth, self.binary_pth)
         self.browser.hide_window()
-    # hide_browser(HIDE)
+        log.warning("\n    ##### - START PROGRAM - ######\n")
 
-        args = [self.browser, self.adr, self.clubs, self.login, self.password]
-        self.scr_run(*args)
-        sched = BlockingScheduler()
-        sched.add_job(self.scr_run, 'interval', args, minutes=10,
-                  start_date="2017-12-20 07:00:00")
 
-        sched.start()
-        log.warning("\n    ##### - END PROGRAM - ######")
+        self.args = [self.browser, self.adr, self.clubs, self.login, self.password]
+        self.scr_run(*self.args)
+
 
 
     def log_in(self, browser, login, password):
@@ -78,7 +74,7 @@ class Main:
         keeper.open_connect()
         keeper.open_cursor()
         table = browser.get_table()
-        log.debug("get table - {}".format(club.name))
+        # log.debug("get table - {}".format(club.name))
         date_time = datetime.datetime.now()
         date = date_time.date()
         h = date_time.time().hour
@@ -162,7 +158,13 @@ class Main:
 
 
 def main():
-    Main()
+    script = Main()
+    sched = BlockingScheduler()
+    sched.add_job(script.scr_run, 'interval', script.args, minutes=1,
+                  start_date="2017-12-20 07:00:00")
+
+    sched.start()
+    log.warning("\n    ##### - END PROGRAM - ######")
 
 
 
