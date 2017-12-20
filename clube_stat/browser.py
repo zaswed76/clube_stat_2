@@ -123,35 +123,38 @@ if __name__ == '__main__':
 
     # driver.select_club("4")
     time.sleep(5)
-    driver.select_club_by_name(clubs["les"].field_name)
+    driver.select_club_by_name(clubs["troya"].field_name)
+    select = Select(driver.driver.find_element_by_id('club_id'))
+    selected_option = select.first_selected_option
+    print(selected_option.text.strip())
 
     #
-    table = driver.get_table()
+    # table = driver.get_table()
+    # # #
+    # keeper = sql_keeper.Keeper(
+    #     os.path.join(pth.DATA_DIR, cfg["sql_data"]))
+    # keeper.open_connect()
+    # keeper.open_cursor()
+    # keeper.create_table(map_sql_table.table())
     # #
-    keeper = sql_keeper.Keeper(
-        os.path.join(pth.DATA_DIR, cfg["sql_data"]))
-    keeper.open_connect()
-    keeper.open_cursor()
-    keeper.create_table(map_sql_table.table())
+    # date_time = datetime.datetime.now()
+    # date = date_time.date()
+    # h = date_time.time().hour
+    # minute = date_time.time().minute
+    # club = clubs["les"].field_name
     #
-    date_time = datetime.datetime.now()
-    date = date_time.date()
-    h = date_time.time().hour
-    minute = date_time.time().minute
-    club = clubs["les"].field_name
-
-    seq = []
-    s = [date, date_time, h, minute, club]
-    temp_lst = []
-    for line in table:
-        # print(line)
-        # print("--------------")
-        temp_lst.extend(s)
-        temp_lst.extend(line)
-        seq.append(temp_lst.copy())
-        temp_lst.clear()
-
-    keeper.add_lines(sql_keeper.ins_table_stat(), seq)
-    keeper.commit()
-    keeper.close()
-    driver.close()
+    # seq = []
+    # s = [date, date_time, h, minute, club]
+    # temp_lst = []
+    # for line in table:
+    #     # print(line)
+    #     # print("--------------")
+    #     temp_lst.extend(s)
+    #     temp_lst.extend(line)
+    #     seq.append(temp_lst.copy())
+    #     temp_lst.clear()
+    #
+    # keeper.add_lines(sql_keeper.ins_table_stat(), seq)
+    # keeper.commit()
+    # keeper.close()
+    # driver.close()

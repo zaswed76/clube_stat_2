@@ -70,11 +70,16 @@ class Main:
         return clubs
 
 
-    def write_data(self, browser, keeper, club):
+    def write_data_table(self, table, keeper):
         keeper.open_connect()
         keeper.open_cursor()
+        keeper.add_lines(sql_keeper.ins_table_stat(), table)
+        keeper.commit()
+        keeper.close()
+
+
+    def get_data_table(self, browser, keeper, club):
         table = browser.get_table()
-        # log.debug("get table - {}".format(club.name))
         date_time = datetime.datetime.now()
         date = date_time.date()
         h = date_time.time().hour
@@ -86,18 +91,12 @@ class Main:
         s = [date, date_time, h, minute, club_name]
         temp_lst = []
         for line in table:
-            # print(line)
-            # print("--------------")
             temp_lst.extend(s)
             temp_lst.extend(line)
             seq.append(temp_lst.copy())
             temp_lst.clear()
+        return seq
 
-        keeper.add_lines(sql_keeper.ins_table_stat(), seq)
-        keeper.commit()
-        log.warning("klub - < {} > write OK".format(club_name))
-        log.warning("{}".format(seq))
-        keeper.close()
 
 
     def read_data(self, browser, clubs, keeper):
@@ -111,13 +110,13 @@ class Main:
                 browser.select_club_by_name(club.field_name)
             except Exception as er:
                 log.error(er)
-                log.debug("browser close")
                 time.sleep(2)
                 return False
             else:
-                time.sleep(3)
-                self.write_data(browser, keeper, club)
                 time.sleep(4)
+                table = self.get_data_table(browser, keeper, club)
+                self.write_data_table(table, keeper)
+                log.warning("klub - < {} > write OK".format(club.name))
         else:
             return True
 
