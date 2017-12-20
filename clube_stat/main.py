@@ -96,6 +96,7 @@ class Main:
         keeper.add_lines(sql_keeper.ins_table_stat(), seq)
         keeper.commit()
         log.warning("klub - < {} > write OK".format(club_name))
+        log.warning("{}".format(seq))
         keeper.close()
 
 
