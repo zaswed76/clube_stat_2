@@ -33,7 +33,7 @@ class Main:
         self.password = service.get_pass()
 
         self.browser = Browser(self.driver_pth, self.binary_pth)
-        self.browser.hide_window()
+        # self.browser.hide_window()
         log.warning("\n    ##### - START PROGRAM - ######\n")
 
 
