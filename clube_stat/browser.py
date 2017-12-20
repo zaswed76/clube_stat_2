@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
-from clubestat.clubs.user import User
+from clube_stat.clubs.user import User
 
 
 class Browser:
@@ -19,7 +19,7 @@ class Browser:
         self.driver = self.get_driver()
 
     def hide_window(self):
-        self.driver.set_window_position(0, 0)
+        self.driver.set_window_position(-1000, 0)
 
     def get_driver(self):
         capabilities = {'chrome.binary': self.binary_pth}
