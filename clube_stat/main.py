@@ -112,7 +112,7 @@ class Main:
                  (stat["guest"], stat["resident"],
                   stat["school"])])
         except Exception as er:
-            log.error(er)
+            log.error("{}\n{}".format(er, stat))
             return False
         else:
             seq = [dt["date"], dt["date_time"], dt["h"], dt["minute"],
@@ -154,6 +154,7 @@ class Main:
                 table_stat = self.get_stat_table(browser, club,
                                                  data_time_objects)
                 stat_tables[club.field_name] = table_stat
+
 
         else:
             return {"map_tables": map_tables, "stat_tables": stat_tables}
@@ -208,11 +209,15 @@ class Main:
             keeper.commit()
 
             club_stat = club_data["stat_tables"]
-
-            self.write_table(keeper, club_stat,
+            if club_stat:
+                self.write_table(keeper, club_stat,
                                   sql_keeper.ins_club_stat())
-            keeper.commit()
-            keeper.close()
+                keeper.commit()
+                keeper.close()
+            else:
+                log.error("not club_stat")
+
+
 
     def write_table(self, keeper, data, sql_scr):
         keeper.add_lines(sql_scr, data.values())

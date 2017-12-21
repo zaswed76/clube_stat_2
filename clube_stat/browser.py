@@ -1,11 +1,14 @@
 import datetime
 import os
 
+from selenium import common
 import selenium.webdriver.chrome.service as service
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions
+ignored_exceptions=(common.exceptions.NoSuchElementException,common.exceptions.StaleElementReferenceException,)
 from clube_stat.clubs.user import User
 
 
@@ -17,6 +20,7 @@ class Browser:
         self.service = service.Service(self.driver_pth)
         self.service.start()
         self.driver = self.get_driver()
+        self.driver.implicitly_wait(10)
 
     def hide_window(self):
         self.driver.set_window_position(-1000, 0)
@@ -87,6 +91,7 @@ class Browser:
 
 
     def get_data(self, field):
+
         return self.driver.find_element_by_id(field).text
 
 
