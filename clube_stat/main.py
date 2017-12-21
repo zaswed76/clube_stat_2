@@ -192,20 +192,31 @@ class Main:
             # получить статистику и таблицы карт клубов
             club_data = self.get_data_tables(browser, clubs,
                                                data_time_objects)
-            club_map = club_data["map_tables"]
-            club_stat= club_data["stat_tables"]
+
+
+
 
             # данные получены без ошибок
             keeper.open_connect()
             keeper.open_cursor()
-            self.write_tables(keeper, club_map,
-                                  sql_keeper.ins_club_map())
-            keeper.commit()
 
-            self.write_tables(keeper, club_stat,
+            # club_map = club_data["map_tables"]
+            # self.write_tables(keeper, club_map,
+            #                       sql_keeper.ins_club_map())
+            # keeper.commit()
+
+            club_stat= club_data["stat_tables"]
+
+            self.write_table(keeper, club_stat,
                                   sql_keeper.ins_club_stat())
             keeper.commit()
             keeper.close()
+
+    def write_table(self, keeper, data, sql_scr):
+        print(data)
+        print(sql_scr)
+        keeper.add_lines(sql_scr, data.values())
+        log.warning("write_tables - ok")
 
     def write_tables(self, keeper, data, sql_scr):
         for tb in data.values():

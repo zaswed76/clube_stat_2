@@ -26,7 +26,7 @@ def map_table():
 
 def stat_table():
     table = """\
-    CREATE TABLE club
+    CREATE TABLE IF NOT EXISTS club
     (
     dt DATA,
     data_time TIMESTAMP,
