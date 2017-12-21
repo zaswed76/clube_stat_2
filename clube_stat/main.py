@@ -113,10 +113,12 @@ class Main:
                   stat["school"])])
         except Exception as er:
             log.error(er)
-        seq = [dt["date"], dt["date_time"], dt["h"], dt["minute"],
+            return False
+        else:
+            seq = [dt["date"], dt["date_time"], dt["h"], dt["minute"],
                club.field_name]
-        seq.extend(stat.values())
-        return seq
+            seq.extend(stat.values())
+            return seq
 
     def get_data_tables(self, browser, clubs, data_time_objects):
         """
@@ -205,7 +207,7 @@ class Main:
                                   sql_keeper.ins_club_map())
             keeper.commit()
 
-            club_stat= club_data["stat_tables"]
+            club_stat = club_data["stat_tables"]
 
             self.write_table(keeper, club_stat,
                                   sql_keeper.ins_club_stat())
@@ -214,12 +216,12 @@ class Main:
 
     def write_table(self, keeper, data, sql_scr):
         keeper.add_lines(sql_scr, data.values())
-        log.warning("write stat - ok")
+        log.warning("write stat - ok\n---------------------")
 
     def write_tables(self, keeper, data, sql_scr):
         for tb in data.values():
             keeper.add_lines(sql_scr, tb)
-        log.warning("write maps - ok\n---------------------")
+        log.warning("write maps - ok")
 
 def main():
     script = Main()
