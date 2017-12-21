@@ -10,7 +10,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 ignored_exceptions=(common.exceptions.NoSuchElementException,common.exceptions.StaleElementReferenceException,)
 from clube_stat.clubs.user import User
-
+from clube_stat.log import log as lg
+from clube_stat import pth
+log = lg.log(os.path.join(pth.LOG_DIR, "scr_web.log"))
 
 class Browser:
     def __init__(self, driver_pth, binary_pth):
@@ -91,8 +93,16 @@ class Browser:
 
 
     def get_data(self, field):
+        while True:
+            try:
+                res = self.driver.find_element_by_id(field)
+            except Exception as ex:
+                log.error(ex)
+                time.sleep(1)
+            else:
+                return res.text
 
-        return self.driver.find_element_by_id(field).text
+
 
 
     def close(self):
