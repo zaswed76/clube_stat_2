@@ -97,7 +97,7 @@ class Browser:
 if __name__ == '__main__':
     from clube_stat import service as sv
     from clube_stat import pth
-    from clube_stat.db import map_sql_table, sql_keeper
+    from clube_stat.db import sql_tables, sql_keeper
     from clube_stat.clubs.club import Club, Clubs
     import time
 

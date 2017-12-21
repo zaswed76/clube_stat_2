@@ -3,32 +3,11 @@ import os
 
 import sqlite3
 
-def table():
-    table = """\
-    CREATE TABLE club
-    (
-    dt DATA,
-    data_time TIMESTAMP,
-    mhour HOUR,
-    mminute MINUTE,
-    club TEXT,
-    load INTEGER,
-    taken INTEGER,
-    free INTEGER,
-    guest INTEGER,
-    resident INTEGER,
-    admin INTEGER,
-    workers INTEGER,
-    school INTEGER,
-    visitor INTEGER
-    );
-"""
-    return table
 
 def ins_club_stat():
     return 'insert into club values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
 
-def ins_table_stat():
+def ins_club_map():
     return 'insert into club_tab values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
 
 def seq_line():
@@ -104,7 +83,6 @@ class Keeper():
         self.connect.commit()
 
     def close(self):
-        self.connect.commit()
         self.cursor.close()
         self.connect.close()
 
@@ -189,7 +167,7 @@ if __name__ == '__main__':
     import os
     from clube_stat import pth, service
     from clube_stat.clubs.club import Clubs, Club
-    from clube_stat.db import map_sql_table
+    from clube_stat.db import sql_tables
     path = os.path.join(pth.DATA_FILE)
     kp = Keeper(path)
     kp.open_connect()
@@ -199,9 +177,11 @@ if __name__ == '__main__':
     clubs = Clubs()
     clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
     pro_les = clubs["les"].pro_comps
+    print(pro_les)
+    # запрос на про зону
     sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
         seq=','.join(['?']*len(pro_les)))
-
+    # sql_="select * from club_tab where  club = 'IT Land Les' and mminute = 54 and subscription = 'абонемент'"
 
     kp.cursor.execute(sql_, pro_les)
     res = kp.cursor.fetchall()

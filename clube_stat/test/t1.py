@@ -1,6 +1,6 @@
 
-s = "Shell V 2.0"
+def f() -> str:
+    return 5
 
-l = "Shell"
 
-print(l in s)
+print(f() * 3)

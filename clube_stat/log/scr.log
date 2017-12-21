@@ -320,3 +320,839 @@
     'main '2017-12-20 15:23:16.4 WARNING  at line 78: klub - < Club - dream > write OK
 ------------
     'main '2017-12-20 15:23:16.5 WARNING  at line 79: [[datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '31', 'bg_resid', '111134', '172.16.12.31', '48:5b:39:a6:5e:2d', '', 'pc111134', 'svamiandrey', '48', '24.00%', None, datetime.datetime(2017, 12, 20, 14, 37, 41)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '11', 'bg_resid', '111130', '172.16.12.11', '9c:5c:8e:90:f4:80', '', 'pc111130', 'sledopit', '51', '25.50%', 'абонемент', datetime.datetime(2017, 12, 20, 10, 49, 5)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '49', 'bg_school', '111179', '172.16.12.49', '48:5b:39:a6:63:86', '', 'pc111179', 'diossko', '16', None, None, datetime.datetime(2017, 12, 20, 14, 39, 34)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '32', 'bg_resid', '111156', '172.16.12.32', '48:5b:39:a6:63:65', '', 'pc111156', 'moptal', '40', '20.00%', None, datetime.datetime(2017, 12, 20, 15, 4, 34)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '12', 'bg_resid', '111140', '172.16.12.12', '9c:5c:8e:97:72:ef', '', 'pc111140', 'atik', '56', '28.00%', 'абонемент', datetime.datetime(2017, 12, 20, 10, 48, 52)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '48', 'bg_school', '111178', '172.16.12.48', '48:5b:39:a6:62:24', '', 'pc111178', 'slavasimus', '32', None, None, datetime.datetime(2017, 12, 20, 14, 24, 22)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '13', 'bg_resid', '111141', '172.16.12.13', '9c:5c:8e:90:f4:66', '', 'pc111141', 'samogonwik', '60', '30.00%', 'абонемент', datetime.datetime(2017, 12, 20, 10, 27, 27)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '15', 'bg_resid', '111143', '172.16.12.15', '9c:5c:8e:97:71:12', '', 'pc111143', 'ickpa', '46', '23.00%', 'абонемент', datetime.datetime(2017, 12, 20, 11, 22, 37)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '6', 'bg_admin', '111384', '172.16.12.6', '9c:5c:8e:97:6c:25', '', 'pc111384', 'support', None, None, None, None], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '45', 'bg_school', '111164', '172.16.12.45', '48:5b:39:a6:5c:be', '', 'pc111164', 'hoxton', '44', None, None, datetime.datetime(2017, 12, 20, 14, 38, 27)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '25', 'bg_guest', '111151', '172.16.12.25', '48:5b:39:a6:62:43', '', 'pc111151', '072623950908', '0', None, None, datetime.datetime(2017, 12, 20, 14, 18, 35)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '5', 'bg_school', '111128', '172.16.12.5', '9c:5c:8e:93:2b:97', '', 'pc111128', 'danya1337', '37', '18.50%', None, datetime.datetime(2017, 12, 20, 14, 16, 13)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '4', 'bg_school', '111127', '172.16.12.4', '9c:5c:8e:90:f5:a6', '', 'pc111127', 'zavtrok', '31', '15.50%', None, datetime.datetime(2017, 12, 20, 15, 22, 8)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '58', 'bg_guest', '111186', '172.16.12.58', '48:5b:39:a6:62:70', '', 'pc111186', '014346611780', '0', None, None, datetime.datetime(2017, 12, 20, 15, 2, 51)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '38', 'bg_resid', '111161', '172.16.12.38', '48:5b:39:a6:5e:94', '', 'pc111161', 'dashiv007', '0', None, 'абонемент', datetime.datetime(2017, 12, 20, 12, 35, 39)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '59', 'bg_guest', '111187', '172.16.12.59', '48:5b:39:a6:62:4c', '', 'pc111187', '093271354582', '0', None, None, datetime.datetime(2017, 12, 20, 15, 2, 57)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '39', 'bg_resid', '111162', '172.16.12.39', '48:5b:39:a6:62:90', '', 'pc111162', 'edward_ivanian', '3', '1.50%', 'абонемент', datetime.datetime(2017, 12, 20, 12, 44, 46)], [datetime.date(2017, 12, 20), datetime.datetime(2017, 12, 20, 15, 23, 15, 848633), 15, 23, 'IT Land DreamTown', '20', 'bg_resid', '111131', '172.16.12.20', '48:5b:39:a6:5d:dc', '', 'pc111131', 'learning', '21', '10.50%', 'абонемент', datetime.datetime(2017, 12, 20, 11, 17, 47)]]
+------------
+    'main '2017-12-21 09:57:01.765 WARNING  at line 37: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 09:57:14.625 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 09:57:19.53 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 09:57:23.541 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 09:57:27.869 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 09:58:06.950 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 09:58:11.499 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 09:58:15.867 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 09:58:20.205 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 09:59:07.205 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 09:59:11.644 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 09:59:16.81 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 09:59:20.549 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:00:06.918 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:00:11.392 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:00:15.795 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:00:20.148 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:01:06.881 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:01:11.322 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:01:15.713 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:01:20.55 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:02:06.883 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:02:11.484 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:02:16.20 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:02:20.342 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:03:07.125 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:03:11.985 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:03:16.786 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:03:21.121 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:04:07.79 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:04:11.616 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:04:16.345 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:04:20.856 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:05:06.914 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:05:11.378 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:05:15.770 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:05:20.211 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:06:06.916 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:06:11.405 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:06:15.869 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:06:20.321 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:07:07.99 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:07:14.130 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:07:19.132 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:07:23.562 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:08:06.912 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:08:11.976 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:08:16.533 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:08:20.972 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:09:06.926 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:09:11.378 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:09:15.794 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:09:20.248 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:10:07.61 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:10:11.684 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:10:16.98 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:10:20.597 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:11:06.975 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:11:11.540 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:11:15.927 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:11:20.356 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:12:06.906 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:12:11.333 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:12:15.845 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:12:20.286 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:13:06.927 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:13:11.363 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:13:15.826 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:13:20.579 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:14:06.889 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:14:11.353 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:14:15.782 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:14:20.246 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:15:06.888 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:15:11.364 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:15:15.792 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:15:20.280 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:16:06.914 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:16:11.354 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:16:15.773 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:16:20.213 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:17:06.916 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:17:11.395 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:17:15.798 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:17:20.250 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:18:06.919 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:18:11.372 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:18:15.776 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:18:20.216 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:19:06.922 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:19:11.399 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:19:15.815 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:19:20.303 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:20:06.949 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:20:11.504 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:20:15.923 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:20:20.401 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:21:06.889 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:21:11.366 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:21:15.757 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:21:20.209 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:22:07.177 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:22:11.620 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:22:16.0 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:22:20.523 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:23:06.917 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:23:11.382 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:23:15.810 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:23:20.262 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:24:07.100 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:24:11.712 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:24:16.161 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:24:20.589 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:25:06.899 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:25:11.415 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:25:15.816 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:25:20.304 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:26:09.6 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:26:13.515 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:26:17.892 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:26:22.344 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:27:06.937 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:27:11.403 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:27:15.818 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:27:20.271 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:28:06.903 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:28:11.379 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:28:15.771 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:28:20.237 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:29:07.254 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:29:12.42 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:29:16.617 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:29:21.82 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:30:06.911 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:30:11.385 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:30:15.862 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:30:20.337 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:31:08.596 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:31:13.69 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:31:17.589 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:31:22.799 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:32:07.7 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:32:11.543 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:32:15.924 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:32:20.419 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:33:06.890 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:33:11.366 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:33:15.793 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:33:20.211 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:34:06.976 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:34:12.27 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:34:16.541 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:34:21.5 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:35:06.883 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:35:11.383 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:35:15.774 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:35:20.241 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:36:06.896 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:36:11.374 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:36:15.776 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:36:20.218 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:37:06.922 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:37:11.387 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:37:15.791 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:37:20.304 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:38:06.889 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:38:11.366 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:38:15.794 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:38:20.223 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:39:06.916 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:39:11.416 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:39:15.873 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:39:20.313 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:40:06.911 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:40:11.382 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:40:15.785 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:40:20.218 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:41:07.208 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:41:11.769 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:41:16.147 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:41:20.601 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:42:07.6 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:42:11.494 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:42:15.958 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:42:20.398 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:43:06.914 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:43:11.402 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:43:15.793 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:43:20.234 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:44:06.978 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:44:11.526 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:44:15.942 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:44:20.403 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:44:57.7 WARNING  at line 37: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 10:45:07.94 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:45:08.22 WARNING  at line 53: open map
+------------
+    'main '2017-12-21 10:45:11.587 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:45:15.990 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:45:20.716 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:45:27.466 WARNING  at line 79: write_tables - ok
+------------
+    'main '2017-12-21 10:46:06.990 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:46:11.479 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:46:15.886 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:46:20.350 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:46:20.839 WARNING  at line 79: write_tables - ok
+------------
+    'main '2017-12-21 10:47:06.995 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:47:10.974 WARNING  at line 37: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 10:47:12.636 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:47:17.75 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:47:21.31 WARNING  at line 53: open map
+------------
+    'main '2017-12-21 10:47:21.831 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:47:40.512 WARNING  at line 79: write_tables - ok
+------------
+    'main '2017-12-21 10:48:07.393 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:48:12.336 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:48:17.352 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:48:21.733 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:49:06.831 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:49:11.274 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:49:15.666 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:49:20.48 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:50:07.543 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:50:12.106 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:50:16.607 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:50:20.992 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:51:06.804 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:51:11.281 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:51:15.661 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:51:20.118 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:52:06.859 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:52:11.265 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:52:15.682 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:52:20.48 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:52:45.99 WARNING  at line 37: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 10:52:52.234 ERROR  at line 55: не правильная пара логин - пароль
+------------
+    'main '2017-12-21 10:53:06.947 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:53:11.475 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:53:15.977 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:53:20.724 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:53:38.133 WARNING  at line 37: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 10:53:46.41 WARNING  at line 53: open map
+------------
+    'main '2017-12-21 10:54:05.392 WARNING  at line 79: write_tables - ok
+------------
+    'main '2017-12-21 10:54:06.880 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:54:11.377 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:54:15.925 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:54:20.390 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:55:06.930 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:55:11.709 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:55:16.134 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:55:20.799 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:56:07.121 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:56:11.633 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:56:16.61 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:56:20.595 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:57:06.926 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:57:11.410 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:57:15.931 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:57:20.497 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:58:06.898 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:58:11.530 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:58:15.910 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:58:20.421 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 10:59:06.947 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 10:59:11.459 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 10:59:15.863 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 10:59:20.377 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:00:06.915 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:00:11.402 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:00:15.819 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:00:20.280 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:01:06.928 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:01:11.428 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:01:15.928 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:01:20.416 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:02:06.907 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:02:11.371 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:02:15.832 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:02:20.215 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:03:07.103 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:03:11.646 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:03:16.6 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:03:20.495 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:04:07.19 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:04:11.436 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:04:15.865 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:04:20.281 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:05:06.929 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:05:11.331 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:05:15.747 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:05:20.129 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:06:06.951 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:06:11.355 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:06:15.843 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:06:20.248 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:07:07.181 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:07:11.624 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:07:16.14 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:07:20.802 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:08:06.931 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:08:11.348 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:08:15.752 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:08:20.145 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:09:07.175 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:09:11.830 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:09:16.196 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:09:20.587 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:10:06.923 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:10:11.462 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:10:15.913 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:10:20.391 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:11:07.45 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:11:11.575 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:11:15.984 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:11:20.392 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:12:07.20 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:12:11.548 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:12:15.973 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:12:20.377 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:13:06.891 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:13:11.310 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:13:15.726 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:13:20.127 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:14:06.932 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:14:11.343 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:14:15.777 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:14:20.157 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:15:06.962 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:15:11.364 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:15:15.827 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:15:20.257 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:16:06.913 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:16:11.350 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:16:15.815 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:16:20.195 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:17:07.10 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:17:11.377 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:17:15.832 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:17:20.235 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:18:06.905 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:18:11.297 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:18:15.761 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:18:20.130 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:19:07.160 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:19:11.639 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:19:16.100 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:19:20.839 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:20:06.897 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:20:11.306 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:20:15.744 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:20:20.122 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:21:06.895 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:21:11.304 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:21:15.720 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:21:20.85 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:22:06.986 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:22:11.391 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:22:15.878 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:22:20.305 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:23:06.940 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:23:11.400 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:23:15.964 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:23:20.395 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:24:06.930 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:24:11.347 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:24:15.837 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:24:20.231 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:25:06.893 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:25:11.304 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:25:15.765 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:25:20.148 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:26:06.934 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:26:11.331 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:26:15.916 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:26:20.580 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:27:06.951 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:27:11.365 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:27:15.829 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:27:20.209 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:28:06.903 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:28:11.307 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:28:15.708 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:28:20.127 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:29:06.868 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:29:11.273 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:29:15.810 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:29:20.212 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:30:06.895 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:30:11.275 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:30:15.740 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:30:20.131 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:31:06.885 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:31:11.290 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:31:15.742 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:31:20.133 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 11:32:06.884 WARNING  at line 119: klub - < les > write OK
+------------
+    'main '2017-12-21 11:32:11.280 WARNING  at line 119: klub - < troya > write OK
+------------
+    'main '2017-12-21 11:32:15.744 WARNING  at line 119: klub - < akadem > write OK
+------------
+    'main '2017-12-21 11:32:20.137 WARNING  at line 119: klub - < dream > write OK
+------------
+    'main '2017-12-21 12:14:03.99 WARNING  at line 38: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 12:14:17.445 WARNING  at line 54: open map
+------------
+    'main '2017-12-21 12:14:36.781 WARNING  at line 80: write_tables - ok
+------------
+    'main '2017-12-21 13:18:39.574 WARNING  at line 38: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 13:18:50.41 WARNING  at line 54: open map
+------------
+    'main '2017-12-21 13:19:09.541 WARNING  at line 80: write_tables - ok
+------------
+    'main '2017-12-21 16:59:40.666 WARNING  at line 41: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 16:59:47.995 WARNING  at line 55: open map
+------------
+    'main '2017-12-21 17:00:08.480 WARNING  at line 209: write_tables - ok
+------------
+    'main '2017-12-21 17:05:35.105 WARNING  at line 41: 
+    ##### - START PROGRAM - ######
+
+------------
+    'main '2017-12-21 17:05:42.642 WARNING  at line 55: open map
+------------
+    'main '2017-12-21 17:06:03.716 WARNING  at line 213: write_tables - ok

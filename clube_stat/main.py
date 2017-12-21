@@ -4,13 +4,15 @@ import time
 import sys
 
 import datetime
+
+import collections
 from apscheduler.schedulers.blocking import BlockingScheduler
 import win32gui, win32con
 
 from clube_stat import service, pth
 from clube_stat.log import log as lg
 from clube_stat.browser import Browser
-from clube_stat.db import sql_keeper, map_sql_table
+from clube_stat.db import sql_keeper, sql_tables
 from clube_stat.clubs.club import Club, Clubs
 
 _cfg = service.load(pth.CONFIG_PATH)
@@ -26,8 +28,10 @@ LIMIT_ERROR = 3
 class Main:
     def __init__(self):
         self.clubs = self.get_clubs()
+
         self.adr = _cfg["web_adr"]
-        self.driver_pth = os.path.join(pth.DRIVERS_DIR, _cfg["driver"])
+        self.driver_pth = os.path.join(pth.DRIVERS_DIR,
+                                       _cfg["driver"])
         self.binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
         self.login = service.get_log()
         self.password = service.get_pass()
@@ -36,11 +40,9 @@ class Main:
         # self.browser.hide_window()
         log.warning("\n    ##### - START PROGRAM - ######\n")
 
-
-        self.args = [self.browser, self.adr, self.clubs, self.login, self.password]
+        self.args = [self.browser, self.adr, self.clubs, self.login,
+                     self.password]
         self.scr_run(*self.args)
-
-
 
     def log_in(self, browser, login, password):
         login_id = 'enter_login'
@@ -50,7 +52,7 @@ class Main:
                        password)
         time.sleep(2)
         if "Карта клуба" in browser.driver.title:
-            print("вошли в карту клуба")
+            log.warning("open map")
         else:
             log.error("не правильная пара логин - пароль")
             input("нажмите  < ENTER > что бы выйти")
@@ -58,7 +60,6 @@ class Main:
             time.sleep(1)
             browser.close()
             sys.exit(1)
-
 
     def get_clubs(self):
         clubs = Clubs()
@@ -70,25 +71,20 @@ class Main:
         return clubs
 
 
-    def write_data_table(self, table, keeper):
-        keeper.open_connect()
-        keeper.open_cursor()
-        keeper.add_lines(sql_keeper.ins_table_stat(), table)
-        keeper.commit()
-        keeper.close()
 
-
-    def get_data_table(self, browser, keeper, club):
+    def get_map_table(self, browser, club, dt):
+        """
+        получить данные карты клуба
+        :param browser: browser.driver
+        :param club: Club
+        :param dt: {date, date_time, h, minute}
+        :return: list <- [[data...], [data...]]
+        """
         table = browser.get_table()
-        date_time = datetime.datetime.now()
-        date = date_time.date()
-        h = date_time.time().hour
-        minute = date_time.time().minute
         club_name = club.field_name
-
         seq = []
-
-        s = [date, date_time, h, minute, club_name]
+        s = [dt["date"], dt["date_time"], dt["h"], dt["minute"],
+             club_name]
         temp_lst = []
         for line in table:
             temp_lst.extend(s)
@@ -97,9 +93,42 @@ class Main:
             temp_lst.clear()
         return seq
 
+    def get_stat_table(self, browser, club, dt):
+        """
+        получить данные статистики клуба
+        :param browser: browser.driver
+        :param club: Club
+        :param dt: {date, date_time, h, minute}
+        :return: list <- [[data...], [data...]]
+        """
+        stat = collections.OrderedDict()
+        stat_names = ["load", "taken", "free", "guest",
+                      "resident", "admin", "workers", "school"]
+        try:
+            for opt in stat_names:
+                stat[opt] = browser.get_data(opt)
+            stat["visitor"] = sum(
+                [int(x) for x in
+                 (stat["guest"], stat["resident"],
+                  stat["school"])])
+        except Exception as er:
+            log.error(er)
+        seq = [dt["date"], dt["date_time"], dt["h"], dt["minute"],
+               club.field_name]
+        seq.extend(stat.values())
+        return seq
 
-
-    def read_data(self, browser, clubs, keeper):
+    def get_data_tables(self, browser, clubs, data_time_objects):
+        """
+        получить данные клуба (статистика и карта)
+        :param browser: browser.driver
+        :param club: Club
+        :param dt: {date, date_time, h, minute}
+        :return: dict <- {data1, data2 ...}
+        data = {'IT Land Troya': table, 'IT Land Les': table, ...}
+        """
+        map_tables = {}
+        stat_tables = {}
         for club in clubs.values():
             if browser.driver.title != "Карта клуба":
                 log.error("club card is not open")
@@ -113,49 +142,75 @@ class Main:
                 time.sleep(2)
                 return False
             else:
-                time.sleep(4)
-                table = self.get_data_table(browser, keeper, club)
-                self.write_data_table(table, keeper)
-                log.warning("klub - < {} > write OK".format(club.name))
-        else:
-            return True
 
+                time.sleep(4)
+
+                table_map = self.get_map_table(browser, club,
+                                               data_time_objects)
+                map_tables[club.field_name] = table_map
+
+                table_stat = self.get_stat_table(browser, club,
+                                                 data_time_objects)
+                stat_tables[club.field_name] = table_stat
+
+        else:
+            return {"map_tables": map_tables, "stat_tables": stat_tables}
+
+    def create_table(self, keeper, table):
+        keeper.open_connect()
+        keeper.open_cursor()
+        keeper.create_table(table)
+        keeper.commit()
+        keeper.close()
+
+    def get_data_time(self):
+        dt = {}
+        dt["date_time"] = datetime.datetime.now()
+        dt["date"] = dt["date_time"].date()
+        dt["h"] = dt["date_time"].time().hour
+        dt["minute"] = dt["date_time"].time().minute
+        return dt
 
     def scr_run(self, browser, adr, clubs, login, password):
-        errors = 0
-        self.keeper = sql_keeper.Keeper(
+        keeper = sql_keeper.Keeper(
             os.path.join(pth.DATA_FILE))
-        self.keeper.open_connect()
-        self.keeper.open_cursor()
-        self.keeper.create_table(map_sql_table.table())
-        self.keeper.close()
+
+        self.create_table(keeper, sql_tables.map_table())
+        self.create_table(keeper, sql_tables.stat_table())
+
         while True:
             # зайти на страницу
             browser.get_page(adr)
             time.sleep(1)
-            # скрыть браузер
-
             #  залогинится
             if "Shell" in browser.driver.title:
                 self.log_in(browser, login, password)
-            time.sleep(1)
-            # получить данные
-            result = self.read_data(browser, clubs, self.keeper)
+            time.sleep(2)
+
+            data_time_objects = self.get_data_time()
+
+            # получить статистику и таблицы карт клубов
+            club_data = self.get_data_tables(browser, clubs,
+                                               data_time_objects)
+            club_map = club_data["map_tables"]
+            club_stat= club_data["stat_tables"]
+
             # данные получены без ошибок
-            if result:
-                log.debug("end ok; count error - {}".format(errors))
-                return
-            # при ошибке повторить чтение данных если не исчерпан лимит ошибок
-            elif errors < LIMIT_ERROR:
-                errors += 1
-                log.error("error; count error - {}".format(errors))
-                continue
+            keeper.open_connect()
+            keeper.open_cursor()
+            self.write_tables(keeper, club_map,
+                                  sql_keeper.ins_club_map())
+            keeper.commit()
 
-            # данные получены потому что лимит исчерпан
-            else:
-                log.debug("end; limit end - {}".format(errors))
-                return
+            self.write_tables(keeper, club_stat,
+                                  sql_keeper.ins_club_stat())
+            keeper.commit()
+            keeper.close()
 
+    def write_tables(self, keeper, data, sql_scr):
+        for tb in data.values():
+            keeper.add_lines(sql_scr, tb)
+        log.warning("write_tables - ok")
 
 def main():
     script = Main()
@@ -165,8 +220,6 @@ def main():
 
     sched.start()
     log.warning("\n    ##### - END PROGRAM - ######")
-
-
 
 
 if __name__ == '__main__':
