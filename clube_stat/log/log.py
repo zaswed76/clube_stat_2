@@ -6,9 +6,7 @@ def log(log_file):
     log = logging.getLogger(__name__)
     log.setLevel(logging.DEBUG)
 
-    formatter = logging.Formatter("""------------
-    '%(module)s '%(asctime)s.%(msecs)d %(levelname)s  at line %(lineno)d: %(message)s""",
-                                  '%Y-%m-%d %H:%M:%S')
+    formatter = logging.Formatter("""'%(module)s '%(asctime)s.%(msecs)d %(levelname)s  at line %(lineno)d: %(message)s""", '%Y-%m-%d %H:%M:%S')
 
     handler = logging.StreamHandler(sys.stderr)
     handler.setFormatter(formatter)

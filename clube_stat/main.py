@@ -200,10 +200,10 @@ class Main:
             keeper.open_connect()
             keeper.open_cursor()
 
-            # club_map = club_data["map_tables"]
-            # self.write_tables(keeper, club_map,
-            #                       sql_keeper.ins_club_map())
-            # keeper.commit()
+            club_map = club_data["map_tables"]
+            self.write_tables(keeper, club_map,
+                                  sql_keeper.ins_club_map())
+            keeper.commit()
 
             club_stat= club_data["stat_tables"]
 
@@ -213,15 +213,13 @@ class Main:
             keeper.close()
 
     def write_table(self, keeper, data, sql_scr):
-        print(data)
-        print(sql_scr)
         keeper.add_lines(sql_scr, data.values())
-        log.warning("write_tables - ok")
+        log.warning("write stat - ok")
 
     def write_tables(self, keeper, data, sql_scr):
         for tb in data.values():
             keeper.add_lines(sql_scr, tb)
-        log.warning("write_tables - ok")
+        log.warning("write maps - ok\n---------------------")
 
 def main():
     script = Main()
