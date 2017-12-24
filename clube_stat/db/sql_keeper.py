@@ -177,13 +177,13 @@ if __name__ == '__main__':
     clubs = Clubs()
     clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
     pro_les = clubs["les"].pro_comps
-    print(pro_les)
+    # print(pro_les)
     # запрос на про зону
-    sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
-        seq=','.join(['?']*len(pro_les)))
-    # sql_="select * from club_tab where  club = 'IT Land Les' and mminute = 54 and subscription = 'абонемент'"
+    # sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
+    #     seq=','.join(['?']*len(pro_les)))
+    sql_="select * from club where  club = 'IT Land Les' and mhour = 18"
 
-    kp.cursor.execute(sql_, pro_les)
+    kp.cursor.execute(sql_)
     res = kp.cursor.fetchall()
     for i in res:
         print(i)

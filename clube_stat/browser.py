@@ -1,6 +1,6 @@
 import datetime
 import os
-
+import time
 from selenium import common
 import selenium.webdriver.chrome.service as service
 from bs4 import BeautifulSoup
@@ -8,21 +8,34 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-ignored_exceptions=(common.exceptions.NoSuchElementException,common.exceptions.StaleElementReferenceException,)
+
+ignored_exceptions = (common.exceptions.NoSuchElementException,
+                      common.exceptions.StaleElementReferenceException,)
 from clube_stat.clubs.user import User
 from clube_stat.log import log as lg
 from clube_stat import pth
-log = lg.log(os.path.join(pth.LOG_DIR, "scr_web.log"))
+
+# log = lg.log(os.path.join(pth.LOG_DIR, "scr_web.log"))
+
 
 class Browser:
-    def __init__(self, driver_pth, binary_pth):
+    def __init__(self, driver_pth, binary_pth, adr, login_id,
+                 password_id, submit_name,
+                 login, password, log=None):
+        self.log = log
+        self.adr = adr
+        self.password = password
+        self.login = login
+        self.submit_name = submit_name
+        self.password_id = password_id
+        self.login_id = login_id
         self.binary_pth = binary_pth
         self.driver_pth = driver_pth
 
         self.service = service.Service(self.driver_pth)
         self.service.start()
         self.driver = self.get_driver()
-        self.driver.implicitly_wait(10)
+        self.get_data_error_limit = 10
 
     def hide_window(self):
         self.driver.set_window_position(-1000, 0)
@@ -33,16 +46,15 @@ class Browser:
                                   capabilities)
         return driver
 
-    def get_page(self, adr):
-        self.driver.get(adr)
+    def get_page(self):
+        self.driver.get(self.adr)
 
-    def log_in(self, login_id, password_id, submit_name,
-               login, password):
-        username = self.driver.find_element_by_id(login_id)
-        username.send_keys(login)
-        passw = self.driver.find_element_by_id(password_id)
-        passw.send_keys(password)
-        m = self.driver.find_element_by_class_name(submit_name)
+    def log_in(self):
+        username = self.driver.find_element_by_id(self.login_id)
+        username.send_keys(self.login)
+        passw = self.driver.find_element_by_id(self.password_id)
+        passw.send_keys(self.password)
+        m = self.driver.find_element_by_class_name(self.submit_name)
         m.click()
 
     def get_table(self):
@@ -81,29 +93,28 @@ class Browser:
                         table.append(line)
         return table
 
-
     def select_club(self, club: str):
         select = Select(self.driver.find_element_by_id('club_id'))
         select.select_by_value(club)
 
-
     def select_club_by_name(self, club_name):
         select = Select(self.driver.find_element_by_id('club_id'))
         select.select_by_visible_text(club_name)
-
 
     def get_data(self, field):
         while True:
             try:
                 res = self.driver.find_element_by_id(field)
             except Exception as ex:
-                log.error(ex)
-                time.sleep(1)
+                if self.get_data_error_limit:
+                    self.get_data_error_limit -= 1
+                    time.sleep(1)
+                    self.get_page()
+                    self.log.warning("get data error")
+                    continue
+                else: return "none"
             else:
                 return res.text
-
-
-
 
     def close(self):
         self.driver.quit()
@@ -131,10 +142,11 @@ if __name__ == '__main__':
     driver_pth = os.path.join(pth.DRIVERS_DIR,
                               cfg["driver"])
     binary_pth = os.path.abspath(cfg["binary_browser_pth"])
-    driver = Browser(driver_pth, binary_pth)
-    driver.get_page(adr)
-    driver.log_in(login_id, password_id, submit_name,
-                  login, password)
+    driver = Browser(driver_pth, binary_pth, adr, login_id,
+                     password_id, submit_name,
+                     login, password)
+    driver.get_page()
+    driver.log_in()
 
     # driver.select_club("4")
     time.sleep(5)
