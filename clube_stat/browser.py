@@ -104,7 +104,7 @@ class Browser:
     def get_data(self, field):
         while True:
             try:
-                res = self.driver.find_element_by_id(field)
+                res = self.driver.find_element_by_id(field).text
             except Exception as ex:
                 if self.get_data_error_limit:
                     self.get_data_error_limit -= 1
@@ -114,7 +114,8 @@ class Browser:
                     continue
                 else: return "none"
             else:
-                return res.text
+                print(res)
+                return res
 
     def close(self):
         self.driver.quit()

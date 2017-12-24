@@ -219,7 +219,7 @@ def main():
     script = Main()
     script.scr_run(*script.args)
     sched = BlockingScheduler()
-    sched.add_job(script.scr_run, 'interval', script.args, minutes=15,
+    sched.add_job(script.scr_run, 'interval', script.args, minutes=1,
                   start_date="2017-12-20 07:00:00")
 
     sched.start()
