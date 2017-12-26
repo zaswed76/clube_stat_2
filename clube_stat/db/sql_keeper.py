@@ -181,7 +181,8 @@ if __name__ == '__main__':
     # запрос на про зону
     # sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
     #     seq=','.join(['?']*len(pro_les)))
-    sql_="select * from club where  club = 'IT Land Les' and mhour = 18"
+    sql_="select * from club_tab where club = 'IT Land Les'"
+
 
     kp.cursor.execute(sql_)
     res = kp.cursor.fetchall()

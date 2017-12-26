@@ -35,7 +35,7 @@ class Browser:
         self.service = service.Service(self.driver_pth)
         self.service.start()
         self.driver = self.get_driver()
-        self.get_data_error_limit = 10
+
 
     def hide_window(self):
         self.driver.set_window_position(-1000, 0)
@@ -102,19 +102,19 @@ class Browser:
         select.select_by_visible_text(club_name)
 
     def get_data(self, field):
+        get_data_error_limit = 10
         while True:
             try:
                 res = self.driver.find_element_by_id(field).text
             except Exception as ex:
-                if self.get_data_error_limit:
-                    self.get_data_error_limit -= 1
+                if get_data_error_limit:
+                    get_data_error_limit -= 1
                     time.sleep(1)
                     self.get_page()
-                    self.log.warning("get data error")
+                    self.log.error(ex)
                     continue
                 else: return "none"
             else:
-                print(res)
                 return res
 
     def close(self):

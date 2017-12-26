@@ -1,37 +1,32 @@
+import collections
+import datetime
 import os
+import sys
 import time
 
-import sys
-
-import datetime
-
-import collections
 from apscheduler.schedulers.blocking import BlockingScheduler
-import win32gui, win32con
 
 from clube_stat import service, pth
-from clube_stat.log import log as lg
 from clube_stat.browser import Browser
-from clube_stat.db import sql_keeper, sql_tables
 from clube_stat.clubs.club import Club, Clubs
+from clube_stat.db import sql_keeper, sql_tables
+from clube_stat.log import log as lg
 
 _cfg = service.load(pth.CONFIG_PATH)
 log = lg.log(os.path.join(pth.LOG_DIR, "scr.log"))
 HIDE = False
-LIMIT_ERROR = 3
 
 
-# def hide_browser(v):
-#     if v:
-#         win32gui.ShowWindow(win32gui.GetForegroundWindow(),
-#                             win32con.SW_MINIMIZE)
 class Main:
     def __init__(self):
         self.clubs = self.get_clubs()
-
+        self.keeper = sql_keeper.Keeper(
+            os.path.join(pth.DATA_FILE))
+        self.create_table(self.keeper, sql_tables.map_table())
+        self.create_table(self.keeper, sql_tables.stat_table())
         adr = _cfg["web_adr"]
         driver_pth = os.path.join(pth.DRIVERS_DIR,
-                                       _cfg["driver"])
+                                  _cfg["driver"])
         binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
         login = service.get_log()
         password = service.get_pass()
@@ -39,40 +34,39 @@ class Main:
         password_id = 'enter_password'
         submit_name = 'but_m'
         self.browser = Browser(driver_pth, binary_pth, adr, login_id,
-                               password_id, submit_name, login, password,log=log)
+                               password_id, submit_name, login,
+                               password, log=log)
+        if HIDE:
+            self.browser.hide_window()
 
         log.warning("\n    ##### - START PROGRAM - ######\n")
 
         self.args = [self.clubs]
-        # self.scr_run(*self.args)
 
     def scr_run(self, clubs):
-        keeper = sql_keeper.Keeper(
-            os.path.join(pth.DATA_FILE))
-        self.create_table(keeper, sql_tables.map_table())
-        self.create_table(keeper, sql_tables.stat_table())
+
         # зайти на страницу
         self.browser.get_page()
         time.sleep(1)
         #  залогинится
         self.log_in()
         time.sleep(2)
-        keeper.open_connect()
-        keeper.open_cursor()
+        self.keeper.open_connect()
+        self.keeper.open_cursor()
         data_time_objects = self.get_data_time()
         # получить статистику и таблицы карт клубов
         club_data = self.get_data_tables(clubs, data_time_objects)
         # данные получены без ошибок
-        # club_map = club_data["map_tables"]
-        # self.write_tables(keeper, club_map,
-        #                       sql_keeper.ins_club_map())
-        # keeper.commit()
+        club_map = club_data["map_tables"]
+        self.write_tables(self.keeper, club_map,
+                          sql_keeper.ins_club_map())
+        self.keeper.commit()
         club_stat = club_data["stat_tables"]
         if club_stat:
-            self.write_table(keeper, club_stat,
-                              sql_keeper.ins_club_stat())
-            keeper.commit()
-            keeper.close()
+            self.write_table(self.keeper, club_stat,
+                             sql_keeper.ins_club_stat())
+            self.keeper.commit()
+            self.keeper.close()
         else:
             log.error("not club_stat")
 
@@ -98,8 +92,6 @@ class Main:
         clubs.add_club(Club(Club.AKADEM, 50))
         clubs.add_club(Club(Club.DREAM, 50))
         return clubs
-
-
 
     def get_map_table(self, club, dt):
         """
@@ -141,7 +133,7 @@ class Main:
              (stat["guest"], stat["resident"],
               stat["school"]) if x != "none"])
         seq = [dt["date"], dt["date_time"], dt["h"], dt["minute"],
-           club.field_name]
+               club.field_name]
         seq.extend(stat.values())
         return seq
 
@@ -182,7 +174,8 @@ class Main:
 
 
         else:
-            return {"map_tables": map_tables, "stat_tables": stat_tables}
+            return {"map_tables": map_tables,
+                    "stat_tables": stat_tables}
 
     def create_table(self, keeper, table):
         keeper.open_connect()
@@ -203,9 +196,6 @@ class Main:
         dt["minute"] = dt["date_time"].time().minute
         return dt
 
-
-
-
     def write_table(self, keeper, data, sql_scr):
         keeper.add_lines(sql_scr, data.values())
         log.warning("write stat - ok\n---------------------")
@@ -214,6 +204,7 @@ class Main:
         for tb in data.values():
             keeper.add_lines(sql_scr, tb)
         log.warning("write maps - ok")
+
 
 def main():
     script = Main()
