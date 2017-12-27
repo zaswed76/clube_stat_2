@@ -22,3 +22,378 @@
 'main '2017-12-26 11:19:10.174 WARNING  at line 206: write maps - ok
 'main '2017-12-26 11:19:10.293 WARNING  at line 201: write stat - ok
 ---------------------
+'main '2017-12-24 22:03:28.775 WARNING  at line 44: 
+    ##### - START PROGRAM - ######
+
+'main '2017-12-24 22:03:35.600 WARNING  at line 84: open map
+'main '2017-12-24 22:03:55.983 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:04:21.996 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:05:21.759 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:06:21.892 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:07:22.81 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:08:22.52 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:09:22.14 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:10:22.92 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:11:22.11 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:12:21.984 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:13:21.898 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:14:21.805 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:15:21.941 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:16:21.898 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:17:21.832 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:18:21.869 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:19:21.854 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:20:21.837 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:21:21.859 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:22:21.980 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:23:22.60 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:24:21.971 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:25:22.57 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:26:22.78 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:27:22.28 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:28:22.91 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:29:22.56 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:30:22.84 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:31:22.83 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:32:22.5 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:33:22.79 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:34:22.154 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:35:21.866 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:36:21.856 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:37:22.64 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:38:22.89 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:39:21.980 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:40:22.269 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:41:22.29 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:42:22.53 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:43:22.64 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:44:21.848 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:45:21.798 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:46:21.815 WARNING  at line 211: write stat - ok
+---------------------
+'browser '2017-12-24 22:47:22.880 WARNING  at line 113: get data error
+'main '2017-12-24 22:47:23.210 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:48:21.838 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:49:21.792 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:50:21.823 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:51:21.824 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:52:21.891 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:53:21.957 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:54:22.123 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:55:22.2 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:56:21.991 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:57:21.869 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:58:22.506 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 22:59:21.825 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:00:21.868 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:01:21.848 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:02:21.831 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:03:21.844 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:04:21.854 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:05:21.826 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:06:21.836 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:07:21.808 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:08:21.952 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:09:22.79 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:10:22.0 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:11:22.675 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:12:22.637 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:13:22.597 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:14:23.69 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:15:22.132 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:16:22.153 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:17:22.743 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:18:22.3 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:19:22.196 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:20:22.2 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:21:22.94 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:22:22.17 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:23:22.62 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:24:22.19 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:25:21.967 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:26:21.971 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:27:21.994 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:28:21.989 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:29:22.137 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:30:22.487 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:31:22.574 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:32:22.467 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:33:22.46 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:34:21.995 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:35:22.810 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:36:22.940 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:37:22.588 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:38:22.102 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:39:22.123 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:40:22.365 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:41:22.213 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:42:25.753 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:43:32.661 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:44:24.924 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:45:22.49 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:46:21.815 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:47:21.884 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:48:22.427 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:49:21.953 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:50:21.887 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:51:21.970 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:52:21.907 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:53:23.45 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:54:21.929 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:55:21.855 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:56:21.947 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:57:21.946 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:58:21.929 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-24 23:59:22.128 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:00:22.205 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:01:22.463 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:02:21.960 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:03:21.827 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:04:22.80 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:05:21.821 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:06:21.812 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:07:21.842 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:08:22.120 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:09:22.289 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:10:22.155 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:11:21.879 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:12:21.811 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:13:21.809 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:14:22.151 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:15:21.869 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:16:21.828 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:17:21.847 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:18:21.882 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:19:21.876 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:20:21.989 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:21:21.906 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:22:21.868 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:23:21.868 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:24:21.783 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:25:21.817 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:26:21.741 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:27:21.821 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:28:21.979 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:29:21.870 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:30:21.836 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:31:21.840 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:32:21.849 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:33:22.72 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:34:21.766 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:35:21.775 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:36:21.839 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:37:21.821 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:38:21.763 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:39:21.812 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:40:21.865 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:41:21.943 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:42:21.938 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:43:21.933 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:44:21.973 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:45:21.903 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:46:21.860 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:47:21.979 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:48:21.896 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:49:21.927 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:50:22.93 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:51:21.913 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:52:21.887 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:53:21.878 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:54:21.839 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:55:21.847 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:56:21.841 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:57:21.926 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:58:21.871 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 00:59:21.951 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:00:22.4 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:01:21.992 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:02:22.22 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:03:21.896 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:04:21.971 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:05:21.962 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:06:22.25 WARNING  at line 211: write stat - ok
+---------------------
+'main '2017-12-25 01:07:21.967 WARNING  at line 211: write stat - ok
+---------------------

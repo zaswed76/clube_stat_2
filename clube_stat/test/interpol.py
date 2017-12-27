@@ -5,11 +5,13 @@ import numpy as np
 # yn = np.interp(7, x, y)
 # print(yn)
 
-x = [1, 2, 3, 4,  7, 8, 9]
-y = [10 ,12, 20, 24, 12, 10, 7]
+# x = [1, 2, 3, 4,  7, 8, 9]
+# y = [10 ,12, 20, 24, 12, 10, 7]
+#
+# print(np.interp(5, x, y))
+# print(np.interp(6, x, y))
 
-print(np.interp(5, x, y))
-print(np.interp(6, x, y))
+h = [9,10,14,15,16,17,18,19,21,22,23,0]
 
 
 # def f1(lst):
