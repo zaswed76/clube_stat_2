@@ -177,19 +177,21 @@ if __name__ == '__main__':
     clubs = Clubs()
     clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
     pro_les = clubs["les"].pro_comps
-    # print(pro_les)
-    # запрос на про зону
-    # sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
-    #     seq=','.join(['?']*len(pro_les)))
-    sql_="select * from club_tab where club = 'IT Land Les'"
 
-
-    kp.cursor.execute(sql_)
-    res = kp.cursor.fetchall()
-    for i in res:
-        print(i)
-        print("--------------")
-    print(len(res))
+    # kp.sample_range_date()
+    # # print(pro_les)
+    # # запрос на про зону
+    # # sql_="select * from club_tab where ncomp in ({seq}) and club = 'IT Land Les'".format(
+    # #     seq=','.join(['?']*len(pro_les)))
+    # sql_="select * from club where club = 'IT Land Les'"
+    #
+    #
+    # kp.cursor.execute(sql_)
+    # res = kp.cursor.fetchall()
+    # for i in res:
+    #     print(i)
+    #     print("--------------")
+    # print(len(res))
 
     # Keeper.seq_print(kp.sample_all())
     # region Description
@@ -218,8 +220,10 @@ if __name__ == '__main__':
     # Keeper.seq_print(s)
     # Keeper.seq_print(kp.sample_range_date("24.09.2017", "26.09.2017"))
 
-    # start_date = Keeper.str_to_date("24.09.2017")
-    # end_date = Keeper.str_to_date("24.09.2017")
+    start_date = Keeper.str_to_date("27.12.2017")
+    end_date = Keeper.str_to_date("29.12.2017")
+    r = kp.sample_range_date(start_date, end_date, "step1", 'IT Land Les')
+    Keeper.seq_print(r)
     # Keeper.seq_print(kp.sample_range_date(start_date, end_date))
 
     # Keeper.seq_print(kp.sample_all())
