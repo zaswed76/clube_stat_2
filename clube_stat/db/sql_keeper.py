@@ -1,5 +1,6 @@
 import datetime
 import os
+from prettytable import PrettyTable
 
 import sqlite3
 
@@ -25,6 +26,11 @@ def seq_line_date_time(date_time):
     dt = datetime.datetime.strptime(date_time, "%d.%m.%Y %H:%M")
     d = dt.date()
     return (d, dt, "les", 1, 1, 1, 1, 1, 1, 1, 1)
+
+def pretty(table, seq):
+    # table = PrettyTable(["животное", "свирепость"])
+    print(table)
+
 
 
 
@@ -105,23 +111,35 @@ class Keeper():
 
         return datetime.datetime.strptime(line, "%d.%m.%Y %H:%M:%S")
 
-    def sample_range_date(self, date_start , date_end, time_step, club_name):
+    def sample_range_date(self, date_start , date_end, club_name):
 
         """
 
         :param date_start : datetime.datetime
         :param date_end: datetime.datetime
         """
-        start_date = date_start
-        end_date = date_end
+
+
+        req = "SELECT * FROM club WHERE (club = ?) AND (data_time BETWEEN ? AND ?) AND mminute = 0"
+        self.cursor.execute(req, (club_name, date_start, date_end))
+        r1 = self.cursor.fetchall()
+        return r1
+
+    def sample_range_date_2(self, date_start , date_end, time_step, club_name, selected=None):
+
+        """
+
+        :param date_start : datetime.datetime
+        :param date_end: datetime.datetime
+        """
         req = {}
-        req["step1"] = "SELECT * FROM club WHERE (club = ?) AND (data_time BETWEEN ? AND ?) AND mminute = 0"
+        req["step1"] = "SELECT dt FROM club WHERE (club = ?) AND (data_time BETWEEN ? AND ?) AND mminute = 0"
 
         req["step30"] = "SELECT * FROM club WHERE(club = ?) AND (data_time BETWEEN ? AND ?) AND (mminute = 0 OR mminute = 30)"
 
-        self.cursor.execute(req[time_step], (club_name, start_date, end_date))
+        self.cursor.execute(req[time_step], (club_name, date_start, date_end))
         r1 = self.cursor.fetchall()
-        return sort_seq(r1)
+        return r1
 
     def sample_all(self):
         self.cursor.execute("SELECT * FROM club")
@@ -164,10 +182,14 @@ class Keeper():
 if __name__ == '__main__':
     # region открыть базу
     # path = "data.db"
+    # region Description
     import os
+    import prettytable
     from clube_stat import pth, service
     from clube_stat.clubs.club import Clubs, Club
+    from clube_stat.db import queries
     from clube_stat.db import sql_tables
+    # endregion
     path = os.path.join(pth.DATA_FILE)
     kp = Keeper(path)
     kp.open_connect()
@@ -177,6 +199,7 @@ if __name__ == '__main__':
     clubs = Clubs()
     clubs.add_club(Club(Club.LES, 50, pro_comps=_cfg["pro_comps"]["les"]))
     pro_les = clubs["les"].pro_comps
+    pretty(sql_tables.stat_table(), [])
 
     # kp.sample_range_date()
     # # print(pro_les)
@@ -220,10 +243,10 @@ if __name__ == '__main__':
     # Keeper.seq_print(s)
     # Keeper.seq_print(kp.sample_range_date("24.09.2017", "26.09.2017"))
 
-    start_date = Keeper.str_to_date("27.12.2017")
-    end_date = Keeper.str_to_date("29.12.2017")
-    r = kp.sample_range_date(start_date, end_date, "step1", 'IT Land Les')
-    Keeper.seq_print(r)
+    # start_date = Keeper.str_to_date("27.12.2017")
+    # end_date = Keeper.str_to_date("29.12.2017")
+    # r = queries.sample_range_date(kp.cursor, start_date, end_date,'IT Land Les')
+    # Keeper.seq_print(r)
     # Keeper.seq_print(kp.sample_range_date(start_date, end_date))
 
     # Keeper.seq_print(kp.sample_all())
