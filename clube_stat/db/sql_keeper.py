@@ -1,6 +1,6 @@
 import datetime
 import os
-from prettytable import PrettyTable
+
 
 import sqlite3
 
