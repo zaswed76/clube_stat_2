@@ -65,6 +65,7 @@ class Keeper():
         data_dir = os.path.dirname(self.path)
         if not os.path.isdir(data_dir):
             os.makedirs(data_dir)
+        print(path)
 
 
     def create_table(self, table):
