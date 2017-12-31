@@ -5,28 +5,34 @@ from clube_stat.db import tables
 from clube_stat.db import sql_keeper
 from clube_stat import pth
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 tbls = tables.Tables()
-tbls.add_table({"club":"text", "visitor":"text", "load":"text"}, "stat")
-# print(tbls["stat"].queries)
-
-kp = sql_keeper.Keeper(os.path.join(pth.DATA_DIR, "pd_sql.sql"))
+tbls.add_table({"club":"text", "visitor":"INTEGER", "dt":"TIMESTAMP"}, "stat")
+kp = sql_keeper.Keeper(os.path.join(pth.DATA_DIR, "pd_sql_2.sql"))
 kp.open_connect()
 kp.open_cursor()
 
-# dt = psql.read_frame('select * from stat', kp.connect)
-df = pd.read_sql_query("select * from stat", kp.connect)
-print(df)
-
-# data = (["les", 12, 15],
-#         ["les", 14, 17],
-#         ["les", 15, 18])
+# kp.create_table(tbls["stat"].queries)
+#
+#
+#
+# data = (["les", 12, '2017-12-30 09:30:12'],
+#         ["les", 14, '2017-12-30 09:35:12'],
+#         ["les", 15, '2017-12-30 09:40:12'],
+#         ["les", 17, '2017-12-30 09:45:12'],
+#         ["les", 22, '2017-12-30 09:50:12'])
 #
 # kp.cursor.executemany("insert into stat values (?,?,?)", data)
 # kp.commit()
 # kp.close()
-# print(kp.cursor.description)
-# kp.create_table(tbls["stat"].queries)
-# kp.close()
+
+df = pd.read_sql_query("select * from stat", kp.connect)
+res = df[df["dt"] > '2017-12-30 09:35:12']
+
+print(res[["visitor","dt"]].plot())
+
+
+
 
