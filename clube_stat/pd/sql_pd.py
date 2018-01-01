@@ -42,9 +42,19 @@ res = df[df["dt"] > '2017-12-30 09:35:12'].copy()
 times = f(res["dt"])
 
 res.insert(3, "times", times)
-print(res[["visitor","times"]])
-res[["visitor","times"]].plot(kind="bar", x=res.times)
+# print(res[["visitor","times"]])
+df = res[["visitor","times"]]
+
+# .plot(kind="bar", x=res.times)
+res2 = pd.DataFrame({"load": [5, 6, 12], "times": [0, 1, 2]})
+# res2[["load","times"]].plot(kind="bar", x=res.times)
+
+fig, ax = plt.subplots()
+ax.plot(res2)
 plt.show()
+
+
+
 
 
 

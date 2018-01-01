@@ -1,14 +1,19 @@
 
-import arrow
-dt = '2017-12-30 09:35:12'
-def f(lst):
-    res = []
-    for i in lst:
-        res.append(arrow.get(i).time().strftime("%H:%M"))
-    return res
+
+# import matplotlib.pyplot as plt
 # import numpy as np
 # import pandas as pd
-# import matplotlib.pyplot as plt
-# ts = pd.Series(np.random.randn(1000), index=pd.date_range('1/1/2000', periods=1000))
-# ts.plot()
-# plt.show()
+
+# data_state_names = pd.read_csv('StateNames.csv') # https://www.kaggle.com/kaggle/us-baby-names
+# data = data_state_names.query('Name=="Eric" and State=="NY"').sort_values(by='Count',ascending=False).sort_values(by='Year',ascending=False).head(5)
+
+# data = pd.DataFrame({"load": [5, 6, 12], "times": [5, 6, 12]})
+
+import matplotlib.pyplot as plt
+
+load = [5, 6, 12]
+times = [1, 3, 6]
+width = 0.5
+plt.bar(times, load,  width)
+plt.xticks([1,2, 3,4,5, 6])
+plt.show()
