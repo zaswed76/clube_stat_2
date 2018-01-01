@@ -5,6 +5,7 @@ from clube_stat.db import tables
 from clube_stat.db import sql_keeper
 from clube_stat import pth
 import pandas as pd
+import arrow
 import matplotlib.pyplot as plt
 
 
@@ -28,10 +29,22 @@ kp.open_cursor()
 # kp.commit()
 # kp.close()
 
-df = pd.read_sql_query("select * from stat", kp.connect)
-res = df[df["dt"] > '2017-12-30 09:35:12']
+def f(lst):
+    res = []
+    for i in lst:
+        res.append(arrow.get(i).time().strftime("%H:%M"))
+    return res
 
-print(res[["visitor","dt"]].plot())
+df = pd.read_sql_query("select * from stat", kp.connect)
+res = df[df["dt"] > '2017-12-30 09:35:12'].copy()
+
+
+times = f(res["dt"])
+
+res.insert(3, "times", times)
+print(res[["visitor","times"]])
+res[["visitor","times"]].plot(kind="bar", x=res.times)
+plt.show()
 
 
 
