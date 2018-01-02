@@ -14,6 +14,6 @@ import matplotlib.pyplot as plt
 load = [5, 6, 12]
 times = [1, 3, 6]
 width = 0.5
-plt.bar(times, load,  width)
+plt.bar(times, load,  width, color="red")
 plt.xticks([1,2, 3,4,5, 6])
 plt.show()
