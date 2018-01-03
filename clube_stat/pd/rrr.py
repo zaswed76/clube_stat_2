@@ -11,27 +11,34 @@
 
 import matplotlib.pyplot as plt
 
-load = [5, 6, 12]
-load2 = [2, 2, 5]
-times = [1, 3, 6]
-# width = 0.8
-# ax = plt.bar(times, load)
-# ax2 = plt.bar(times, load2)
-#
-# # plt.xticks([1,2, 3,4,5, 6])
-# plt.title('Клуб Лесной')
-# plt.show()
-
+import matplotlib.lines as lines
 class Graph:
     def __init__(self, **kwargs):
         self.kwargs = kwargs
         self.mpl_fig = plt.figure()
         self.ax = self.mpl_fig.add_subplot(111)
+        self.ax.set_xlabel(self.kwargs.get("x_label", ""))
+        self.ax.set_ylabel(self.kwargs.get("y_label", ""))
         plt.title(self.kwargs.get("title", ""))
-        plt.rcParams['figure.facecolor'] = 'black'
+        y_lim = kwargs.get("y_lim")
+        if y_lim:
+            plt.ylim([0, y_lim])
         self.plots = {}
         self.index_name = 0
+        line1 = [(0,6), (1,6)]
 
+
+
+        (line1_xs, line1_ys) = zip(*line1)
+        # self.ax2 = self.mpl_fig.add_subplot(211)
+        # self.ax2.add_line(lines.Line2D(line1_xs, line1_ys, linewidth=1, color='red'))
+        # lines = plt.plot(0, 6, 10, 6)
+        # plt.setp(lines, color='r', linewidth=2.0)
+        # plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
+
+    def set_xtick_label(self, labels):
+        self.ax.set_xticks(range(1, len(labels)+1))
+        self.ax.set_xticklabels(labels)
 
     def set_plot(self, x_seq, y_seq, **kwargs):
         try:
@@ -39,7 +46,9 @@ class Graph:
         except KeyError:
             name = self.index_name
             self.index_name += 1
-        self.plots[name] = self.ax.bar(x_seq, y_seq, color=kwargs.get("color"))
+        self.plots[name] = self.ax.bar(x_seq, y_seq,
+                                       color=kwargs.get("color"),
+                                       width=kwargs.get("width", 0.8))
 
     def show(self):
         plt.show()
@@ -47,7 +56,7 @@ class Graph:
     def save(self, path):
         plt.savefig(path)
 
-    def set_legend(self, bg=None, color_matching=False):
+    def set_legend(self, bg=None, color_matching=False, alpha=1.0):
         plots = []
         names = []
         colors = []
@@ -55,8 +64,11 @@ class Graph:
             plots.append(p[0])
             names.append(n)
             colors.append(p[0].get_facecolor())
-        legend = plt.legend([x for x in plots], names, shadow=True)
+        legend = plt.legend([x for x in plots], names, shadow=False, fancybox=True)
         frame = legend.get_frame()
+        frame.set_alpha(alpha)
+        frame.set_linewidth(0.1)
+        frame.set_edgecolor('black')
         if bg is not None:
             frame.set_facecolor(bg)
         if color_matching:
@@ -64,16 +76,24 @@ class Graph:
                 text.set_color(color)
 
 
+
     def set_bg(self, color="lightgrey"):
         self.ax.set_facecolor(color)
 
+if __name__ == '__main__':
+    load = [14, 14, 14, 8, 7, 5, 9]
+    load2 = [2, 2, 5, 7, 6, 3, 1]
+    load3 = [6, 6, 5, 6, 6, 6, 4]
+    times = [1, 2, 3, 4, 5, 6, 7]
 
-gr = Graph(title="les")
-gr.set_plot(times, load, name="visitors")
-gr.set_plot(times, load2, color="#E3D969", name="schools")
-gr.set_legend(bg="#C8C8C8", color_matching=False)
-gr.set_bg("#D2D2D2")
-gr.show()
+    gr = Graph(title="les", y_lim=50, x_label="время", y_label="человек")
+    gr.set_plot(times, load, name="visitors")
+    gr.set_plot(times, load2, color="#E3D969", name="schools")
+    # gr.set_plot(times, load3, color="red", name="pro", width=0.05)
+    gr.set_xtick_label(times)
+    gr.set_legend(bg="#C8C8C8", color_matching=False, alpha=0.5)
+    gr.set_bg("#D2D2D2")
+    gr.show()
 
-# gr.save("dddd.png")
+
 
