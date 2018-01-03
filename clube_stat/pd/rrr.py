@@ -25,7 +25,7 @@ class Graph:
             plt.ylim([0, y_lim])
         self.plots = {}
         self.index_name = 0
-        line1 = [(0,6), (1,6)]
+        line1 = [(0,6), (9,6)]
 
 
 
@@ -35,6 +35,8 @@ class Graph:
         # lines = plt.plot(0, 6, 10, 6)
         # plt.setp(lines, color='r', linewidth=2.0)
         # plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
+        self.ax.add_artist(lines.Line2D(line1_xs, line1_ys,
+                                        linewidth=0.5, color='white'))
 
     def set_xtick_label(self, labels):
         self.ax.set_xticks(range(1, len(labels)+1))
@@ -89,7 +91,7 @@ if __name__ == '__main__':
     gr = Graph(title="les", y_lim=50, x_label="время", y_label="человек")
     gr.set_plot(times, load, name="visitors")
     gr.set_plot(times, load2, color="#E3D969", name="schools")
-    # gr.set_plot(times, load3, color="red", name="pro", width=0.05)
+    gr.set_plot(times, load3, color="red", name="pro", width=0.05)
     gr.set_xtick_label(times)
     gr.set_legend(bg="#C8C8C8", color_matching=False, alpha=0.5)
     gr.set_bg("#D2D2D2")
