@@ -50,7 +50,8 @@ class Graph:
             self.index_name += 1
         self.plots[name] = self.ax.bar(x_seq, y_seq,
                                        color=kwargs.get("color"),
-                                       width=kwargs.get("width", 0.8))
+                                       width=kwargs.get("width", 0.8),
+                                       alpha=kwargs.get("alpha", 1.0))
 
     def show(self):
         plt.show()
@@ -83,15 +84,15 @@ class Graph:
         self.ax.set_facecolor(color)
 
 if __name__ == '__main__':
-    load = [14, 14, 14, 8, 7, 5, 9]
+    load = [14, 14, 14, 18, 17, 15, 19]
     load2 = [2, 2, 5, 7, 6, 3, 1]
     load3 = [6, 6, 5, 6, 6, 6, 4]
     times = [1, 2, 3, 4, 5, 6, 7]
 
     gr = Graph(title="les", y_lim=50, x_label="время", y_label="человек")
     gr.set_plot(times, load, name="visitors")
-    gr.set_plot(times, load2, color="#E3D969", name="schools")
-    gr.set_plot(times, load3, color="red", name="pro", width=0.05)
+    gr.set_plot(times, load2, color="#E3D969", name="schools", width=0.6)
+    gr.set_plot(times, load3, color="red", name="pro", alpha=0.4, width=0.4)
     gr.set_xtick_label(times)
     gr.set_legend(bg="#C8C8C8", color_matching=False, alpha=0.5)
     gr.set_bg("#D2D2D2")
