@@ -17,26 +17,27 @@ class Graph:
         self.kwargs = kwargs
         self.mpl_fig = plt.figure()
         self.ax = self.mpl_fig.add_subplot(111)
+        # self.ax2 = self.mpl_fig.add_subplot(211)
         self.ax.set_xlabel(self.kwargs.get("x_label", ""))
         self.ax.set_ylabel(self.kwargs.get("y_label", ""))
         plt.title(self.kwargs.get("title", ""))
         y_lim = kwargs.get("y_lim")
         if y_lim:
-            plt.ylim([0, y_lim])
+            self.ax.set_ylim(0, 50)
         self.plots = {}
         self.index_name = 0
-        line1 = [(0,6), (9,6)]
+        # line1 = [(0,6), (9,6)]
 
 
-
-        (line1_xs, line1_ys) = zip(*line1)
-        # self.ax2 = self.mpl_fig.add_subplot(211)
-        # self.ax2.add_line(lines.Line2D(line1_xs, line1_ys, linewidth=1, color='red'))
-        # lines = plt.plot(0, 6, 10, 6)
-        # plt.setp(lines, color='r', linewidth=2.0)
-        # plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
-        self.ax.add_artist(lines.Line2D(line1_xs, line1_ys,
-                                        linewidth=0.5, color='white'))
+        #
+        # (line1_xs, line1_ys) = zip(*line1)
+        # # self.ax2 = self.mpl_fig.add_subplot(211)
+        # # self.ax2.add_line(lines.Line2D(line1_xs, line1_ys, linewidth=1, color='red'))
+        # # lines = plt.plot(0, 6, 10, 6)
+        # # plt.setp(lines, color='r', linewidth=2.0)
+        # # plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
+        # self.ax.add_artist(lines.Line2D(line1_xs, line1_ys,
+        #                                 linewidth=0.5, color='white'))
 
     def set_xtick_label(self, labels):
         self.ax.set_xticks(range(1, len(labels)+1))
@@ -84,15 +85,19 @@ class Graph:
         self.ax.set_facecolor(color)
 
 if __name__ == '__main__':
-    load = [14, 14, 14, 18, 17, 15, 19]
-    load2 = [2, 2, 5, 7, 6, 3, 1]
-    load3 = [6, 6, 5, 6, 6, 6, 4]
-    times = [1, 2, 3, 4, 5, 6, 7]
+    import random
+    load = [random.randint(11, 30)  for x in range(23)]
+    load2 = [random.randint(4, 10)  for x in range(23)]
+
+    times = list(range(9, 24))
+    times.extend(range(1, 9))
+    print(len(load))
+    print(len(times))
 
     gr = Graph(title="les", y_lim=50, x_label="время", y_label="человек")
-    gr.set_plot(times, load, name="visitors")
-    gr.set_plot(times, load2, color="#E3D969", name="schools", width=0.6)
-    gr.set_plot(times, load3, color="red", name="pro", alpha=0.4, width=0.4)
+    gr.set_plot(times, load, name="visitors", width=0.8)
+    gr.set_plot(times, load2, color="#E3D969", name="schools", width=0.4)
+
     gr.set_xtick_label(times)
     gr.set_legend(bg="#C8C8C8", color_matching=False, alpha=0.5)
     gr.set_bg("#D2D2D2")
