@@ -28,22 +28,23 @@ class Graph:
 
         plt.ylim([0, self.max])
         rects = self.ax.patches
+        print(rects[0])
 
-        for rect, label in zip(rects, human):
-            height = rect.get_height()
-            self.ax.text(rect.get_x() + rect.get_width() / 2,
-                         height + 0.4,
-                         label, ha='center', va='bottom')
-            if len(self.times) < 24:
-                size = 10
-            else:
-                size = 8
-
-            font = {'family': 'Calibri',
-                    'size': size}
-
-
-            matplotlib.rc('font', **font)
+        # for rect, label in zip(rects, human):
+        #     height = rect.get_height()
+        #     self.ax.text(rect.get_x() + rect.get_width() / 2,
+        #                  height + 0.4,
+        #                  label, ha='center', va='bottom')
+        #     if len(self.times) < 24:
+        #         size = 10
+        #     else:
+        #         size = 8
+        #
+        #     font = {'family': 'Calibri',
+        #             'size': size}
+        #
+        #
+        #     matplotlib.rc('font', **font)
 
     def create_plot2(self, human, color=None):
         if color is None:
@@ -76,8 +77,8 @@ class Graph:
         #     matplotlib.rc('font', **font)
 
 
-    def legend(self, *args):
-        self.ax.legend((rects1[0], rects2[0]), ('visitor', 'school'))
+    # def legend(self, *args):
+    #     self.ax.legend((rects1[0], rects2[0]), ('visitor', 'school'))
 
 
     def show(self):
@@ -110,7 +111,8 @@ if __name__ == '__main__':
     gr = Graph(times, mans, "время", "человек", width=0.8,
                title="Lesnoy")
     gr.create_plot(mans, color="green")
-    gr.create_plot2(mans2, color="#F8EF3E")
-    gr.ax.legend((mans[0], mans2[0]), ('visitor', 'school'))
+    gr.create_plot(mans2, color="#F8EF3E")
+    gr.ax.set_facecolor('#A1A1A1')
+    # gr.ax.legend((mans[0], mans2[0]), ('visitor', 'school'))
     gr.show()
 
