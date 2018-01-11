@@ -13,9 +13,6 @@ class Window(QDialog):
 
         # a figure instance to plot on
         self.figure = plt.figure()
-
-        # this is the Canvas Widget that displays the `figure`
-        # it takes the `figure` instance as a parameter to __init__
         self.canvas = FigureCanvas(self.figure)
 
         # this is the Navigation widget

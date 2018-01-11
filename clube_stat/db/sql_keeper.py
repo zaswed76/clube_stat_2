@@ -109,7 +109,6 @@ class Keeper():
 
     @staticmethod
     def str_to_date_time(line):
-
         return datetime.datetime.strptime(line, "%d.%m.%Y %H:%M:%S")
 
     def sample_range_date(self, date_start , date_end, club_name):

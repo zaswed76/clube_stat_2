@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 tbls = tables.Tables()
 tbls.add_table({"club":"text", "visitor":"INTEGER", "dt":"TIMESTAMP"}, "stat")
-kp = sql_keeper.Keeper(os.path.join(pth.DATA_DIR, "pd_sql_2.sql"))
+kp = sql_keeper.Keeper(r"D:\0SYNC\python_projects\clube_stat_2\clube_stat\data\data.sql")
 kp.open_connect()
 kp.open_cursor()
 
@@ -35,23 +35,26 @@ def f(lst):
         res.append(arrow.get(i).time().strftime("%H:%M"))
     return res
 
-df = pd.read_sql_query("select * from stat", kp.connect)
-res = df[df["dt"] > '2017-12-30 09:35:12'].copy()
+df = pd.read_sql_query("SELECT data_time FROM club", kp.connect)
+# print(df)
+# print("----------------------")
+res =  df[(df["data_time"] > '2017-12-27 12:50:00')&(df["data_time"] <='2017-12-27 13:20:59')]
+print(res)
 
 
-times = f(res["dt"])
-
-res.insert(3, "times", times)
-# print(res[["visitor","times"]])
-df = res[["visitor","times"]]
-
-# .plot(kind="bar", x=res.times)
-res2 = pd.DataFrame({"load": [5, 6, 12], "times": [0, 1, 2]})
-# res2[["load","times"]].plot(kind="bar", x=res.times)
-
-fig, ax = plt.subplots()
-ax.plot(res2)
-plt.show()
+# times = f(res["dt"])
+#
+# res.insert(3, "times", times)
+# # print(res[["visitor","times"]])
+# df = res[["visitor","times"]]
+#
+# # .plot(kind="bar", x=res.times)
+# res2 = pd.DataFrame({"load": [5, 6, 12], "times": [0, 1, 2]})
+# # res2[["load","times"]].plot(kind="bar", x=res.times)
+#
+# fig, ax = plt.subplots()
+# ax.plot(res2)
+# plt.show()
 
 
 

@@ -17,7 +17,6 @@ class Graph:
         self.kwargs = kwargs
         self.mpl_fig = plt.figure()
         self.ax = self.mpl_fig.add_subplot(111)
-        # self.ax2 = self.mpl_fig.add_subplot(211)
         self.ax.set_xlabel(self.kwargs.get("x_label", ""))
         self.ax.set_ylabel(self.kwargs.get("y_label", ""))
         plt.title(self.kwargs.get("title", ""))
@@ -79,8 +78,6 @@ class Graph:
             for color, text in zip(colors, legend.get_texts()):
                 text.set_color(color)
 
-
-
     def set_bg(self, color="lightgrey"):
         self.ax.set_facecolor(color)
 
@@ -95,8 +92,8 @@ if __name__ == '__main__':
     print(len(times))
 
     gr = Graph(title="les", y_lim=50, x_label="время", y_label="человек")
-    gr.set_plot(times, load, name="visitors", width=0.8)
-    gr.set_plot(times, load2, color="#E3D969", name="schools", width=0.4)
+    # gr.set_plot(times, load, name="visitors", width=0.8)
+    # gr.set_plot(times, load2, color="#E3D969", name="schools", width=0.4)
 
     gr.set_xtick_label(times)
     gr.set_legend(bg="#C8C8C8", color_matching=False, alpha=0.5)
