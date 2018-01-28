@@ -113,6 +113,6 @@ if __name__ == '__main__':
     gr.create_plot(mans, color="green")
     gr.create_plot(mans2, color="#F8EF3E")
     gr.ax.set_facecolor('#A1A1A1')
-    # gr.ax.legend((mans[0], mans2[0]), ('visitor', 'school'))
+    gr.ax.legend()
     gr.show()
 

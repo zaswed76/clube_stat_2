@@ -25,7 +25,10 @@ class Graph:
             self.ax.set_ylim(0, 50)
         self.plots = {}
         self.index_name = 0
-        # line1 = [(0,6), (9,6)]
+
+
+
+
 
 
         #
@@ -92,11 +95,11 @@ if __name__ == '__main__':
     print(len(times))
 
     gr = Graph(title="les", y_lim=50, x_label="время", y_label="человек")
-    # gr.set_plot(times, load, name="visitors", width=0.8)
+    gr.set_plot(times, load, name="visitors", width=0.8)
     # gr.set_plot(times, load2, color="#E3D969", name="schools", width=0.4)
 
     gr.set_xtick_label(times)
-    gr.set_legend(bg="#C8C8C8", color_matching=False, alpha=0.5)
+    gr.ax.legend()
     gr.set_bg("#D2D2D2")
     gr.show()
 

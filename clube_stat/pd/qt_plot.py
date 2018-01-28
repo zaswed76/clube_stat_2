@@ -36,7 +36,7 @@ class Window(QDialog):
         data = [random.random() for i in range(10)]
 
         # instead of ax.hold(False)
-        self.figure.clear()
+        # self.figure.clear()
 
         # create an axis
         ax = self.figure.add_subplot(111)
@@ -48,7 +48,9 @@ class Window(QDialog):
         ax.plot(data, '*-')
 
         # refresh canvas
+        ax.legend()
         self.canvas.draw()
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

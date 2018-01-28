@@ -56,8 +56,10 @@ class PlotCanvas(FigureCanvas):
 
     def plot(self):
         self.fig.clear()
-        data = [random.random() for i in range(25)]
+        data = [i for i in range(3)]
         ax = self.figure.add_subplot(111)
+        ax.set_xticks([0, 1, 2])
+        ax.set_xticklabels([1, 2, "t"])
         ax.plot(data, 'r-')
         ax.set_title('PyQt Matplotlib Example')
         self.draw()
