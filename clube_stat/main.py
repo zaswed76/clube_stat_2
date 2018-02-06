@@ -64,10 +64,14 @@ class Main:
         # получить статистику и таблицы карт клубов
         club_data = self.get_data_tables(clubs, data_time_objects)
         # данные получены без ошибок
-        club_map = club_data["map_tables"]
-        self.write_tables(self.keeper, club_map,
-                          sql_keeper.ins_club_map())
-        self.keeper.commit()
+        if club_data:
+            club_map = club_data["map_tables"]
+            self.write_tables(self.keeper, club_map,
+                              sql_keeper.ins_club_map())
+            self.keeper.commit()
+        else:
+            log.error("not club_data")
+
         club_stat = club_data["stat_tables"]
         if club_stat:
             self.write_table(self.keeper, club_stat,
@@ -220,13 +224,17 @@ class Main:
 
 def main():
     script = Main()
-    script.scr_run(*script.args)
-    sched = BlockingScheduler()
-    sched.add_job(script.scr_run, 'interval', script.args, minutes=5,
-                  start_date="2017-12-20 07:00:00")
+    while True:
+        script.scr_run(*script.args)
+        log.warning("\n    ##### - END PROGRAM - ######")
+        time.sleep(180)
 
-    sched.start()
-    log.warning("\n    ##### - END PROGRAM - ######")
+    # sched = BlockingScheduler()
+    # sched.add_job(script.scr_run, 'interval', script.args, minutes=5,
+    #               start_date="2017-12-20 07:00:00")
+    #
+    # sched.start()
+
 
 
 if __name__ == '__main__':

@@ -42,6 +42,8 @@ class Browser:
 
     def get_driver(self):
         capabilities = {'chrome.binary': self.binary_pth}
+
+
         driver = webdriver.Remote(self.service.service_url,
                                   capabilities)
         return driver
