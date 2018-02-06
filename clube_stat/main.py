@@ -17,6 +17,8 @@ _cfg = service.load(pth.CONFIG_PATH)
 log = lg.log(os.path.join(pth.LOG_DIR, "scr.log"))
 HIDE = False
 
+class ExitException(Exception):
+    pass
 
 class Main:
     def __init__(self):
@@ -178,7 +180,7 @@ class Main:
                     stat_tables[club.field_name] = table_stat
                 except urllib.error.URLError:
                     log.error("аварийный выход")
-                    sys.exit()
+                    raise Exception
 
                 log.debug("get data on club - {}".format(club.name))
 
