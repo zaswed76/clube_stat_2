@@ -3,6 +3,7 @@ import datetime
 import os
 import sys
 import time
+import urllib
 
 from apscheduler.schedulers.blocking import BlockingScheduler
 
@@ -46,7 +47,11 @@ class Main:
     def scr_run(self, clubs):
 
         # зайти на страницу
-        self.browser.get_page()
+        try:
+            self.browser.get_page()
+        except urllib.error.URLError:
+            log.error("аварийный выход")
+            sys.exit()
         time.sleep(1)
         #  залогинится
         self.log_in()
@@ -163,13 +168,18 @@ class Main:
             else:
                 time.sleep(4)
 
-                table_map = self.get_map_table(club,
-                                               data_time_objects)
-                map_tables[club.field_name] = table_map
+                try:
+                    table_map = self.get_map_table(club,
+                                                   data_time_objects)
+                    map_tables[club.field_name] = table_map
 
-                table_stat = self.get_stat_table(club,
-                                                 data_time_objects)
-                stat_tables[club.field_name] = table_stat
+                    table_stat = self.get_stat_table(club,
+                                                     data_time_objects)
+                    stat_tables[club.field_name] = table_stat
+                except urllib.error.URLError:
+                    log.error("аварийный выход")
+                    sys.exit()
+
                 log.debug("get data on club - {}".format(club.name))
 
 
@@ -210,7 +220,7 @@ def main():
     script = Main()
     script.scr_run(*script.args)
     sched = BlockingScheduler()
-    sched.add_job(script.scr_run, 'interval', script.args, minutes=1,
+    sched.add_job(script.scr_run, 'interval', script.args, minutes=5,
                   start_date="2017-12-20 07:00:00")
 
     sched.start()

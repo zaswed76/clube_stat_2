@@ -24316,3 +24316,37 @@
 'main '2018-02-06 08:35:21.776 WARNING  at line 206: write maps - ok
 'main '2018-02-06 08:35:21.912 WARNING  at line 201: write stat - ok
 ---------------------
+'main '2018-02-06 08:48:45.592 WARNING  at line 43: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-06 08:48:53.405 WARNING  at line 83: open map
+'main '2018-02-06 08:49:13.762 WARNING  at line 211: write maps - ok
+'main '2018-02-06 08:49:13.927 WARNING  at line 206: write stat - ok
+---------------------
+'main '2018-02-06 08:51:01.5 ERROR  at line 53: аварийный выход
+'main '2018-02-06 08:52:01.6 ERROR  at line 53: аварийный выход
+'main '2018-02-06 08:52:54.603 WARNING  at line 43: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-06 08:53:02.689 WARNING  at line 83: open map
+'main '2018-02-06 08:53:22.976 WARNING  at line 216: write maps - ok
+'main '2018-02-06 08:53:23.185 WARNING  at line 211: write stat - ok
+---------------------
+'main '2018-02-06 08:54:08.776 ERROR  at line 180: аварийный выход
+'main '2018-02-06 08:55:01.19 ERROR  at line 53: аварийный выход
+'main '2018-02-06 08:56:01.10 ERROR  at line 53: аварийный выход
+'main '2018-02-06 08:57:01.8 ERROR  at line 53: аварийный выход
+'main '2018-02-06 08:58:01.6 ERROR  at line 53: аварийный выход
+'main '2018-02-06 08:59:00.996 ERROR  at line 53: аварийный выход
+'main '2018-02-06 09:00:00.996 ERROR  at line 53: аварийный выход
+'main '2018-02-06 09:01:01.7 ERROR  at line 53: аварийный выход
+'main '2018-02-06 09:02:01.6 ERROR  at line 53: аварийный выход
+'main '2018-02-06 09:03:01.6 ERROR  at line 53: аварийный выход
+'main '2018-02-06 09:04:01.6 ERROR  at line 53: аварийный выход
+'main '2018-02-06 09:10:45.380 WARNING  at line 43: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-06 09:10:53.422 WARNING  at line 83: open map
+'main '2018-02-06 09:11:13.755 WARNING  at line 216: write maps - ok
+'main '2018-02-06 09:11:13.984 WARNING  at line 211: write stat - ok
+---------------------
