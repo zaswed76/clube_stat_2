@@ -23,7 +23,7 @@ class ExitException(Exception):
 class Main:
     def __init__(self):
         self.clubs = self.get_clubs()
-        self.keeper = sql_keeper.Keeper(r"D:/save/serg/работа/data_off_on.sql")
+        self.keeper = sql_keeper.Keeper(r"D:/save/serg/drop/Dropbox/data_off_on.sql")
         self.create_table(self.keeper, sql_tables.map_table())
         self.create_table(self.keeper, sql_tables.stat_table())
         adr = _cfg["web_adr"]

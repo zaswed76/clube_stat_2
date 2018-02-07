@@ -20,7 +20,7 @@ tables:
         mhour: HOUR
         mminute: MINUTE
         club: TEXT
-        ncomp: TEXT
+        ncomp: INTEGER
         class_: TEXT
         data_id: TEXT
         data_ip: TEXT
