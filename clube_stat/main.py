@@ -24,7 +24,7 @@ class Main:
     def __init__(self):
         self.clubs = self.get_clubs()
         self.keeper = sql_keeper.Keeper(
-            os.path.join(pth.DATA_FILE))
+            os.path.join(r"D:/save/serg/работа/data.sql"))
         self.create_table(self.keeper, sql_tables.map_table())
         self.create_table(self.keeper, sql_tables.stat_table())
         adr = _cfg["web_adr"]
@@ -227,7 +227,7 @@ def main():
     while True:
         script.scr_run(*script.args)
         log.warning("\n    ##### - END PROGRAM - ######")
-        time.sleep(180)
+        time.sleep(300)
 
     # sched = BlockingScheduler()
     # sched.add_job(script.scr_run, 'interval', script.args, minutes=5,
