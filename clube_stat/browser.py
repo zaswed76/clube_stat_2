@@ -69,30 +69,29 @@ class Browser:
                 r = i.findAll("span")
                 if r:
                     tag = r[0]
-                    if tag["class"][1] != 'bg_off':
-                        title = tag["title"]
-                        if title:
-                            usr = User(title)
-                            login = usr.login
-                            level = usr.level
-                            discount = usr.discount
-                            subscription = usr.subscription
-                            time_start = usr.time_start
-                        else:
-                            login, level, discount, subscription, time_start = (
-                                None, None, None, None, None)
-
-                        line = (
-                            tag.text,
-                            tag["class"][1],
-                            tag["data-id"],
-                            tag["data-ip"],
-                            tag["data-mac"],
-                            tag["data-unauth"],
-                            tag["id"],
-                            login, level, discount, subscription,
-                            time_start)
-                        table.append(line)
+                    # if tag["class"][1] != 'bg_off':
+                    title = tag["title"]
+                    if title:
+                        usr = User(title)
+                        login = usr.login
+                        level = usr.level
+                        discount = usr.discount
+                        subscription = usr.subscription
+                        time_start = usr.time_start
+                    else:
+                        login, level, discount, subscription, time_start = (
+                            None, None, None, None, None)
+                    line = (
+                        tag.text,
+                        tag["class"][1],
+                        tag["data-id"],
+                        tag["data-ip"],
+                        tag["data-mac"],
+                        tag["data-unauth"],
+                        tag["id"],
+                        login, level, discount, subscription,
+                        time_start)
+                    table.append(line)
         return table
 
     def select_club(self, club: str):
