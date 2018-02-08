@@ -1,0 +1,9 @@
+
+Les: |
+    CREATE TABLE IF NOT EXISTS LES_STAT
+    (data_time TIMESTAMP,
+    visitor INTEGER);
+
+
+
+
