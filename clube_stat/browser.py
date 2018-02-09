@@ -55,8 +55,6 @@ class Browser:
         username = self.driver.find_element_by_id(self.login_id)
         username.send_keys(self.login)
         passw = self.driver.find_element_by_id(self.password_id)
-        print(self.password)
-        print("---------------")
         passw.send_keys(self.password)
         m = self.driver.find_element_by_class_name(self.submit_name)
         m.click()

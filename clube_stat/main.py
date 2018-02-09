@@ -232,7 +232,7 @@ def main():
         key = sys.argv[1]
     except IndexError:
         raise Exception("нужен ключ")
-    log.warning("version - {}\n".format(clube_stat.__version__))
+    print("version - {}\n---------------".format(clube_stat.__version__))
     script = Main(key)
     while True:
         script.scr_run(*script.args)
