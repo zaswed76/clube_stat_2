@@ -1,6 +1,3 @@
-import sys
-import yaml
-
 import base64
 import os
 import pickle
@@ -70,27 +67,18 @@ class Pwd:
             pwd_decode = None
         return pwd_decode
 
-def get_pass(key, path):
-
-    data = Pwd.load(path)
-    return Pwd.decrypt(data["serg"], key)
-
-
-
-def get_log():
-    return "zaswed"
-
-def save(path, data):
-    with open(path, 'w') as outfile:
-        yaml.dump(data, outfile, indent=4, width=0)
-
-def load(path):
-    with open(path, "r") as f:
-        return yaml.load(f)
 
 if __name__ == '__main__':
-    from clubestat import pth
-    cfg_pth = pth.CONFIG_PATH
-    d = {"user": "login", "pwd": "pass", "www": [[1, 2, 3],[1, 2, 3] ]}
-    save(cfg_pth, d)
-    print(load(cfg_pth))
+    pth = "pwd.pkl"
+    user = "serg"
+    p = Pwd()
+    code = p.encrypt("fasadAQ9", "land76")
+    Pwd.save(user, pth, code)
+    # data = Pwd.load(pth)
+    #
+    # data_user = data["zaswed@gmail.com"]
+    #
+    # if data:
+    #     print(Pwd.decrypt(data_user, "vrabey"))
+    # else:
+    #     print("not")

@@ -21,7 +21,7 @@ class ExitException(Exception):
     pass
 
 class Main:
-    def __init__(self):
+    def __init__(self, key):
         self.clubs = self.get_clubs()
         self.keeper = sql_keeper.Keeper(r"D:/save/serg/drop/Dropbox/data_off_on.sql")
         self.create_table(self.keeper, sql_tables.map_table())
@@ -31,7 +31,7 @@ class Main:
                                   _cfg["driver"])
         binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
         login = service.get_log()
-        password = service.get_pass()
+        password = service.get_pass(key, os.path.join(pth.ROOT, "etc/uls.pl"))
         login_id = 'enter_login'
         password_id = 'enter_password'
         submit_name = 'but_m'
@@ -222,11 +222,16 @@ class Main:
 
 
 def main():
-    script = Main()
+    try:
+        key = sys.argv[1]
+    except IndexError:
+        raise Exception("нужен ключ")
+
+    script = Main(key)
     while True:
         script.scr_run(*script.args)
-        log.warning("\n    ##### - END PROGRAM - ######")
         time.sleep(300)
+    log.warning("\n    ##### - END PROGRAM - ######")
 
     # sched = BlockingScheduler()
     # sched.add_job(script.scr_run, 'interval', script.args, minutes=5,
