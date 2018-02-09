@@ -73,6 +73,7 @@ class Pwd:
 def get_pass(key, path):
 
     data = Pwd.load(path)
+    print(path)
     print(data)
     print("key")
     print("------------------")
