@@ -73,7 +73,12 @@ class Pwd:
 def get_pass(key, path):
 
     data = Pwd.load(path)
-    return Pwd.decrypt(data["serg"], key)
+    print(data)
+    print("key")
+    print("------------------")
+    p = Pwd.decrypt(data["serg"], key)
+
+    return p
 
 
 
@@ -89,8 +94,4 @@ def load(path):
         return yaml.load(f)
 
 if __name__ == '__main__':
-    from clubestat import pth
-    cfg_pth = pth.CONFIG_PATH
-    d = {"user": "login", "pwd": "pass", "www": [[1, 2, 3],[1, 2, 3] ]}
-    save(cfg_pth, d)
-    print(load(cfg_pth))
+    pass

@@ -71,7 +71,11 @@ class Main:
         else:
             log.error("not club_data")
 
-        club_stat = club_data["stat_tables"]
+        try:
+            club_stat = club_data["stat_tables"]
+        except TypeError:
+            log.error("закрыт браузер")
+            raise Exception("закрыт браузер")
         if club_stat:
             self.write_table(self.keeper, club_stat,
                              sql_keeper.ins_club_stat())
