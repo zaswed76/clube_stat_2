@@ -1,5 +1,5 @@
 
-recursive-include clube_stat/etc *.yaml
+recursive-include clube_stat/etc *
 recursive-include clube_stat/data *
 recursive-include clube_stat/drivers *.exe
 recursive-include clube_stat/log *.log
