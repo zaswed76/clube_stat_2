@@ -53,7 +53,6 @@ class Pwd:
             with open(path, 'rb') as f:
                 return pickle.load(f)
 
-
     @staticmethod
     def decrypt(data, master):
         decode_data = base64.standard_b64decode(data).decode(
@@ -70,29 +69,25 @@ class Pwd:
             pwd_decode = None
         return pwd_decode
 
-def get_pass(key, path):
 
+def get_pass(name, key, path):
     data = Pwd.load(path)
-    print(path)
-    print(data)
-    print("key")
-    print("------------------")
-    p = Pwd.decrypt(data["serg"], key)
-
-    return p
-
+    return Pwd.decrypt(data[name], key)
 
 
 def get_log():
     return "zaswed"
 
+
 def save(path, data):
     with open(path, 'w') as outfile:
         yaml.dump(data, outfile, indent=4, width=0)
 
+
 def load(path):
     with open(path, "r") as f:
         return yaml.load(f)
+
 
 if __name__ == '__main__':
     pass

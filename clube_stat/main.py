@@ -6,7 +6,7 @@ import time
 import urllib
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-
+import clube_stat
 from clube_stat import service, pth
 from clube_stat.browser import Browser
 from clube_stat.clubs.club import Club, Clubs
@@ -22,8 +22,10 @@ class ExitException(Exception):
 
 class Main:
     def __init__(self, key):
+        data_path = r"D:/save/serg/drop/Dropbox/data_off_on.sql"
         self.clubs = self.get_clubs()
-        self.keeper = sql_keeper.Keeper(r"D:/save/serg/drop/Dropbox/data_off_on.sql")
+        self.keeper = sql_keeper.Keeper(data_path)
+        log.warning("open data - {}".format(data_path))
         self.create_table(self.keeper, sql_tables.map_table())
         self.create_table(self.keeper, sql_tables.stat_table())
         adr = _cfg["web_adr"]
@@ -31,7 +33,7 @@ class Main:
                                   _cfg["driver"])
         binary_pth = os.path.abspath(_cfg["binary_browser_pth"])
         login = service.get_log()
-        password = service.get_pass(key, os.path.join(pth.ROOT, "etc/uls.pl"))
+        password = service.get_pass("serg", key, os.path.join(pth.ROOT, "etc/uls.pl"))
         login_id = 'enter_login'
         password_id = 'enter_password'
         submit_name = 'but_m'
@@ -230,7 +232,7 @@ def main():
         key = sys.argv[1]
     except IndexError:
         raise Exception("нужен ключ")
-
+    log.warning("version - {}\n".format(clube_stat.__version__))
     script = Main(key)
     while True:
         script.scr_run(*script.args)
