@@ -15,7 +15,7 @@ from clube_stat.log import log as lg
 
 _cfg = service.load(pth.CONFIG_PATH)
 log = lg.log(os.path.join(pth.LOG_DIR, "scr.log"))
-HIDE = False
+HIDE = True
 
 class ExitException(Exception):
     pass
