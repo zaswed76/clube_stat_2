@@ -38,7 +38,7 @@ class Browser:
 
 
     def hide_window(self):
-        self.driver.set_window_position(-1000, 0)
+        self.driver.set_window_position(-5000, 0)
 
     def get_driver(self):
         capabilities = {'chrome.binary': self.binary_pth}
