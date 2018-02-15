@@ -166,10 +166,12 @@ class Main:
         stat_tables = {}
         for club in clubs.values():
             if self.browser.driver.title != "Карта клуба":
+                self.browser.close()
                 log.error("club card is not open")
                 log.debug("browser close")
+                log.debug("browser close")
                 time.sleep(2)
-                return False
+                sys.exit()
             try:
                 self.browser.select_club_by_name(club.field_name)
             except Exception as er:
