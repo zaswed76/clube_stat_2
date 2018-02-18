@@ -6,14 +6,12 @@ import selenium.webdriver.chrome.service as service
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
+
 
 ignored_exceptions = (common.exceptions.NoSuchElementException,
                       common.exceptions.StaleElementReferenceException,)
 from clube_stat.clubs.user import User
-from clube_stat.log import log as lg
-from clube_stat import pth
+
 
 # log = lg.log(os.path.join(pth.LOG_DIR, "scr_web.log"))
 
@@ -41,11 +39,13 @@ class Browser:
         self.driver.set_window_position(-5000, 0)
 
     def get_driver(self):
-        capabilities = {'chrome.binary': self.binary_pth}
-
-
+        capabilities = {'chrome.binary': self.binary_pth,
+                        'chrome.switches': ['--disable-logging']}
+        #
+        #
         driver = webdriver.Remote(self.service.service_url,
                                   capabilities)
+        # driver = webdriver.Chrome(executable_path=self.binary_pth)
         return driver
 
     def get_page(self):
