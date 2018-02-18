@@ -25265,3 +25265,1245 @@ from unknown error: web view not found
   (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64)
 
 'main '2018-02-09 13:10:42.11 ERROR  at line 72: not club_data
+'main '2018-02-16 09:29:14.690 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-16 09:29:22.124 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-16 09:29:29.675 WARNING  at line 94: open map
+'main '2018-02-16 09:29:50.612 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:29:50.871 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 09:32:49.109 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-16 09:32:54.35 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-16 09:33:01.45 WARNING  at line 94: open map
+'main '2018-02-16 09:33:22.92 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:33:22.444 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 09:34:52.343 ERROR  at line 56: аварийный выход
+'main '2018-02-16 09:38:44.688 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:38:44.837 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 09:44:09.102 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:44:09.336 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 09:49:31.262 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:49:31.577 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 09:54:53.531 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:54:53.866 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 09:57:21.583 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-16 09:57:26.534 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-16 09:57:33.113 WARNING  at line 94: open map
+'main '2018-02-16 09:57:53.544 WARNING  at line 229: write maps - ok
+'main '2018-02-16 09:57:54.9 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:03:16.79 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:03:16.467 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:08:38.673 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:08:39.15 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:14:00.916 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:14:01.375 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:19:23.455 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:19:23.789 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:24:45.913 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:24:46.231 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:30:08.149 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:30:08.479 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:35:30.463 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:35:30.807 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:40:52.753 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:40:53.94 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:46:15.187 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:46:15.476 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:51:37.424 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:51:37.583 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 10:56:59.458 WARNING  at line 229: write maps - ok
+'main '2018-02-16 10:56:59.653 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:02:21.560 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:02:21.967 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:07:44.70 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:07:44.239 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:13:06.133 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:13:06.460 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:18:28.424 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:18:28.725 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:23:50.833 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:23:51.142 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:29:13.148 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:29:13.541 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:34:35.713 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:34:35.880 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:39:57.916 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:39:58.233 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:45:20.207 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:45:20.526 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:50:42.505 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:50:42.862 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 11:56:04.906 WARNING  at line 229: write maps - ok
+'main '2018-02-16 11:56:05.324 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:01:27.414 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:01:27.617 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:06:49.620 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:06:49.951 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:12:11.972 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:12:12.318 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:17:34.433 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:17:34.612 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:22:56.497 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:22:56.844 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:28:18.818 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:28:19.121 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:33:41.189 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:33:41.481 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:39:03.659 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:39:03.820 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:44:25.756 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:44:26.70 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:49:48.2 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:49:48.171 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 12:55:10.215 WARNING  at line 229: write maps - ok
+'main '2018-02-16 12:55:10.525 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:00:32.707 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:00:33.8 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:05:55.60 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:05:55.223 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:11:17.180 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:11:17.500 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:16:39.447 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:16:39.759 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:22:01.827 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:22:02.140 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:27:24.167 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:27:24.367 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:32:46.485 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:32:46.889 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:38:08.890 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:38:09.258 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:43:31.523 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:43:31.867 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:48:54.2 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:48:54.313 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:54:16.368 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:54:16.711 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 13:59:38.782 WARNING  at line 229: write maps - ok
+'main '2018-02-16 13:59:39.92 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:05:01.188 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:05:01.501 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:10:23.739 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:10:24.63 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:15:46.186 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:15:46.362 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:21:08.386 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:21:08.684 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:26:30.807 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:26:31.122 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:31:53.341 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:31:53.747 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:37:15.891 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:37:16.192 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:42:38.372 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:42:38.674 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:48:00.771 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:48:00.946 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:53:23.104 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:53:23.415 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 14:58:45.518 WARNING  at line 229: write maps - ok
+'main '2018-02-16 14:58:45.827 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:04:08.59 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:04:08.399 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:09:30.615 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:09:30.964 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:14:53.66 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:14:53.399 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:20:15.598 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:20:15.929 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:25:38.66 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:25:38.414 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:31:00.730 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:31:01.71 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:36:23.255 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:36:23.717 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:41:45.825 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:41:46.168 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:47:08.222 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:47:08.646 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:52:30.910 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:52:31.100 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 15:57:53.203 WARNING  at line 229: write maps - ok
+'main '2018-02-16 15:57:53.378 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:03:15.533 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:03:15.835 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:08:37.976 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:08:38.317 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:14:00.424 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:14:00.838 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:19:23.21 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:19:23.208 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:24:45.411 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:24:45.725 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:30:07.777 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:30:08.97 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:35:30.172 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:35:30.344 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:40:52.551 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:40:52.734 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:46:14.914 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:46:15.210 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:51:37.310 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:51:37.630 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 16:56:59.861 WARNING  at line 229: write maps - ok
+'main '2018-02-16 16:57:00.170 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:02:22.426 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:02:22.761 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:07:44.999 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:07:45.367 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:13:07.551 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:13:07.750 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:18:29.820 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:18:30.150 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:23:52.424 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:23:52.725 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:29:14.813 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:29:14.974 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:34:37.6 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:34:37.423 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:39:59.630 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:39:59.968 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:45:22.211 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:45:22.532 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:50:44.661 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:50:45.2 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 17:56:07.65 WARNING  at line 229: write maps - ok
+'main '2018-02-16 17:56:07.386 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:01:29.542 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:01:29.709 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:06:51.769 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:06:52.187 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:12:14.314 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:12:14.470 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:17:36.495 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:17:36.680 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:22:58.814 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:22:59.145 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:28:21.276 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:28:21.589 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:33:43.841 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:33:44.17 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:39:06.53 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:39:06.401 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:44:28.502 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:44:29.104 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:49:51.265 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:49:51.685 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 18:55:13.835 WARNING  at line 229: write maps - ok
+'main '2018-02-16 18:55:14.158 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:00:36.283 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:00:36.620 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:05:58.787 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:05:59.220 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:11:21.480 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:11:21.845 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:16:43.984 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:16:44.304 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:22:06.350 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:22:06.764 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:27:28.881 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:27:29.189 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:32:51.187 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:32:51.506 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:38:13.630 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:38:13.961 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:43:36.24 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:43:36.441 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:48:58.683 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:48:58.968 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:54:21.59 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:54:21.370 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 19:59:43.455 WARNING  at line 229: write maps - ok
+'main '2018-02-16 19:59:43.765 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:05:05.846 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:05:06.176 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:10:28.251 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:10:28.451 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:15:50.502 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:15:50.725 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:21:12.720 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:21:13.62 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:26:35.87 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:26:35.409 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:31:57.567 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:31:57.915 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:37:20.133 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:37:20.326 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:42:42.452 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:42:42.882 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:48:04.975 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:48:05.299 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:53:27.523 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:53:27.875 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 20:58:50.29 WARNING  at line 229: write maps - ok
+'main '2018-02-16 20:58:50.336 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:04:12.436 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:04:12.782 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:09:34.954 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:09:35.268 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:14:57.395 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:14:57.811 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:20:19.946 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:20:20.279 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:25:42.351 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:25:42.669 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:31:04.735 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:31:05.52 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:36:27.95 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:36:27.453 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:41:49.667 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:41:49.962 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:47:12.16 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:47:12.336 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:52:34.387 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:52:34.694 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 21:57:56.911 WARNING  at line 229: write maps - ok
+'main '2018-02-16 21:57:57.250 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:03:19.272 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:03:19.706 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:08:41.880 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:08:42.208 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:14:04.334 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:14:04.685 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:19:26.668 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:19:26.847 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:24:48.815 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:24:49.2 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:30:10.974 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:30:11.294 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:35:33.379 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:35:33.558 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:40:55.642 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:40:55.961 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:46:18.9 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:46:18.325 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:51:40.378 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:51:40.674 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 22:57:02.742 WARNING  at line 229: write maps - ok
+'main '2018-02-16 22:57:03.84 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:02:25.252 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:02:25.423 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:07:47.500 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:07:47.825 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:13:10.3 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:13:10.310 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:18:32.451 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:18:32.783 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:23:54.919 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:23:55.253 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:29:17.316 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:29:17.634 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:34:39.763 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:34:40.95 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:40:02.193 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:40:02.505 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:45:24.621 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:45:24.958 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:50:47.101 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:50:47.429 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-16 23:56:09.655 WARNING  at line 229: write maps - ok
+'main '2018-02-16 23:56:09.980 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:01:32.140 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:01:32.475 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:06:54.595 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:06:54.780 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:12:16.743 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:12:17.43 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:17:39.282 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:17:39.570 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:23:01.665 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:23:02.71 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:28:24.365 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:28:24.655 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:33:46.775 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:33:47.81 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:39:09.195 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:39:09.533 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:44:31.635 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:44:31.922 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:49:54.181 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:49:54.492 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 00:55:16.625 WARNING  at line 229: write maps - ok
+'main '2018-02-17 00:55:16.942 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:00:39.2 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:00:39.353 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:06:01.494 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:06:01.851 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:11:24.31 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:11:24.368 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:16:46.545 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:16:46.932 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:22:09.34 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:22:09.357 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:27:31.509 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:27:31.838 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:32:53.958 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:32:54.265 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:38:16.371 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:38:16.679 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:43:38.835 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:43:39.44 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:49:01.167 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:49:01.487 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:54:23.535 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:54:23.971 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 01:59:46.89 WARNING  at line 229: write maps - ok
+'main '2018-02-17 01:59:46.246 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:05:08.382 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:05:08.903 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:10:30.949 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:10:31.258 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:15:53.255 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:15:53.596 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:21:15.760 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:21:16.66 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:26:38.167 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:26:38.458 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:32:00.567 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:32:00.901 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:37:22.959 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:37:23.278 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:42:45.365 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:42:45.701 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:48:07.773 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:48:08.207 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:53:30.352 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:53:30.801 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 02:58:53.2 WARNING  at line 229: write maps - ok
+'main '2018-02-17 02:58:53.308 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:04:15.382 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:04:15.829 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:09:37.936 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:09:38.238 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:15:00.305 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:15:00.641 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:20:22.734 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:20:23.66 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:25:45.160 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:25:45.341 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:31:07.615 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:31:07.907 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:36:30.0 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:36:30.299 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:41:52.377 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:41:52.673 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:47:14.727 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:47:15.27 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:52:37.122 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:52:37.532 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 03:57:59.610 WARNING  at line 229: write maps - ok
+'main '2018-02-17 03:58:00.26 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:03:22.187 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:03:22.505 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:08:44.651 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:08:44.933 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:14:07.138 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:14:07.443 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:19:29.549 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:19:29.955 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:24:52.134 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:24:52.405 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:30:14.543 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:30:14.864 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:35:36.968 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:35:37.290 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:40:59.422 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:40:59.763 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:46:21.932 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:46:22.238 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:51:44.370 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:51:44.712 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 04:57:06.862 WARNING  at line 229: write maps - ok
+'main '2018-02-17 04:57:07.186 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:02:29.412 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:02:29.837 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:07:52.10 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:07:52.427 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:13:14.576 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:13:14.884 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:18:36.986 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:18:37.391 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:23:59.528 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:23:59.805 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:29:21.822 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:29:22.133 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:34:44.260 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:34:44.569 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:40:06.675 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:40:06.980 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:45:29.136 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:45:29.443 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:50:51.641 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:50:51.824 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 05:56:13.935 WARNING  at line 229: write maps - ok
+'main '2018-02-17 05:56:14.238 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:01:36.382 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:01:36.781 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:06:59.38 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:06:59.360 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:12:21.464 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:12:21.807 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:17:43.934 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:17:44.349 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:23:06.659 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:23:06.987 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:28:29.237 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:28:29.605 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:33:51.727 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:33:52.43 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:39:14.165 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:39:14.481 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:44:36.664 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:44:36.960 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:49:59.134 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:49:59.439 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 06:55:21.568 WARNING  at line 229: write maps - ok
+'main '2018-02-17 06:55:21.881 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:00:44.16 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:00:44.309 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:06:06.454 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:06:06.780 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:11:28.852 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:11:29.166 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:16:51.172 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:16:51.592 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:22:13.699 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:22:14.0 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:27:36.69 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:27:36.463 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:29:18.183 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-17 07:29:24.488 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-17 07:29:31.645 WARNING  at line 94: open map
+'main '2018-02-17 07:29:52.175 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:29:52.509 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:35:14.735 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:35:15.88 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:40:37.82 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:40:37.428 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:45:59.470 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:45:59.811 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:51:21.920 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:51:22.265 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 07:56:44.448 WARNING  at line 229: write maps - ok
+'main '2018-02-17 07:56:44.820 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 08:02:06.928 WARNING  at line 229: write maps - ok
+'main '2018-02-17 08:02:07.294 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 08:07:29.418 WARNING  at line 229: write maps - ok
+'main '2018-02-17 08:07:29.707 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-17 08:12:30.857 ERROR  at line 56: аварийный выход
+'main '2018-02-18 08:22:42.652 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-18 08:22:48.893 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-18 08:22:55.995 WARNING  at line 94: open map
+'main '2018-02-18 08:23:16.585 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:23:16.891 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 08:28:39.69 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:28:39.429 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 08:34:01.419 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:34:01.716 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 08:39:23.846 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:39:24.331 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 08:44:46.409 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:44:46.741 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 08:50:08.944 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:50:09.377 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 08:55:31.464 WARNING  at line 229: write maps - ok
+'main '2018-02-18 08:55:31.799 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:00:53.832 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:00:54.164 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:06:16.201 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:06:16.499 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:11:38.580 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:11:38.902 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:17:00.985 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:17:01.396 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:22:23.442 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:22:23.753 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:27:45.822 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:27:46.176 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:33:08.43 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:33:08.497 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:38:30.430 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:38:30.725 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:43:52.745 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:43:52.917 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:49:14.760 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:49:15.53 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:54:37.69 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:54:37.461 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 09:59:59.416 WARNING  at line 229: write maps - ok
+'main '2018-02-18 09:59:59.743 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:05:21.673 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:05:21.872 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:10:43.772 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:10:44.112 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:16:06.229 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:16:06.571 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:21:28.571 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:21:28.937 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:26:50.950 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:26:51.290 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:32:13.172 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:32:13.515 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:37:35.498 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:37:35.904 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:42:57.814 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:42:58.124 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:48:20.230 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:48:20.526 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:53:42.468 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:53:42.652 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 10:59:04.589 WARNING  at line 229: write maps - ok
+'main '2018-02-18 10:59:04.903 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:04:26.976 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:04:27.129 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:09:49.162 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:09:49.486 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:15:11.621 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:15:12.41 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:20:34.34 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:20:34.454 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:25:56.573 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:25:56.926 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:31:18.929 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:31:19.267 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:36:41.379 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:36:41.696 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:42:03.748 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:42:04.69 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:47:26.119 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:47:26.318 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:52:48.386 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:52:48.719 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 11:58:10.909 WARNING  at line 229: write maps - ok
+'main '2018-02-18 11:58:11.333 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:03:33.512 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:03:33.852 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:08:55.899 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:08:56.230 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:14:18.375 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:14:18.669 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:19:40.827 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:19:41.139 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:25:03.307 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:25:03.631 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:30:25.654 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:30:25.960 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:35:48.69 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:35:48.370 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:41:10.519 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:41:10.837 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:46:33.41 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:46:33.226 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:51:55.218 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:51:55.387 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 12:57:17.426 WARNING  at line 229: write maps - ok
+'main '2018-02-18 12:57:17.603 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:02:39.641 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:02:39.960 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:08:02.64 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:08:02.430 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:13:24.550 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:13:24.884 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:18:47.23 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:18:47.336 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:24:09.392 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:24:09.739 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:29:32.3 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:29:32.379 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:34:54.547 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:34:54.869 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:40:17.41 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:40:17.362 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:45:39.534 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:45:39.864 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:51:02.182 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:51:02.466 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 13:56:24.586 WARNING  at line 229: write maps - ok
+'main '2018-02-18 13:56:24.864 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:01:47.27 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:01:47.279 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:07:09.286 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:07:09.588 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:12:31.744 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:12:32.142 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:17:54.379 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:17:54.679 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:23:16.812 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:23:17.236 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:28:39.414 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:28:39.704 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:34:01.829 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:34:02.264 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:39:24.461 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:39:24.807 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:44:46.973 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:44:47.193 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:50:09.345 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:50:09.665 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 14:55:31.848 WARNING  at line 229: write maps - ok
+'main '2018-02-18 14:55:32.289 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:00:54.445 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:00:54.875 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:06:17.193 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:06:17.498 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:11:39.637 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:11:39.913 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:17:02.28 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:17:02.348 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:22:24.529 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:22:24.912 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:27:47.55 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:27:47.200 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:33:09.474 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:33:09.754 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:38:31.887 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:38:32.188 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:43:54.326 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:43:54.624 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:49:16.848 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:49:16.997 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 15:54:39.123 WARNING  at line 229: write maps - ok
+'main '2018-02-18 15:54:39.512 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:00:01.657 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:00:01.983 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:05:24.181 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:05:24.484 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:10:46.654 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:10:47.54 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:16:09.335 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:16:09.762 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:21:31.900 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:21:32.212 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:26:54.428 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:26:54.752 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:32:16.803 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:32:17.116 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:37:39.304 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:37:39.626 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:43:01.838 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:43:02.11 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:48:24.190 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:48:24.531 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:53:46.716 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:53:47.32 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 16:59:09.225 WARNING  at line 229: write maps - ok
+'main '2018-02-18 16:59:09.528 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:04:31.792 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:04:32.83 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:09:54.611 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:09:54.905 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:15:17.98 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:15:17.400 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:20:39.595 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:20:39.993 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:26:02.346 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:26:02.644 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:31:24.893 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:31:25.338 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:36:47.540 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:36:47.825 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:42:10.44 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:42:10.489 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:47:32.775 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:47:33.109 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:52:55.344 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:52:55.756 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 17:58:17.895 WARNING  at line 229: write maps - ok
+'main '2018-02-18 17:58:18.319 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:03:40.466 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:03:40.804 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:09:03.19 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:09:03.379 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:14:25.582 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:14:25.893 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:19:48.102 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:19:48.400 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:25:10.585 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:25:11.18 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:30:33.206 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:30:33.608 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:35:55.816 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:35:56.212 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:41:18.408 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:41:18.704 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:46:40.846 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:46:41.1 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:52:03.140 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:52:03.425 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 18:57:25.614 WARNING  at line 229: write maps - ok
+'main '2018-02-18 18:57:26.13 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:02:48.284 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:02:48.577 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:08:10.725 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:08:11.20 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:13:33.148 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:13:33.461 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:18:55.572 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:18:55.739 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:24:17.841 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:24:18.0 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:29:40.138 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:29:40.469 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:35:02.605 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:35:02.916 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:40:25.54 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:40:25.398 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:45:47.550 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:45:47.873 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:51:10.88 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:51:10.497 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 19:56:32.737 WARNING  at line 229: write maps - ok
+'main '2018-02-18 19:56:32.908 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:01:55.73 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:01:55.572 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:07:17.707 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:07:18.55 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:12:40.175 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:12:40.581 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:18:02.741 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:18:03.137 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:23:25.394 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:23:25.695 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:28:47.825 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:28:48.125 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:34:10.279 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:34:10.683 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:39:32.809 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:39:33.91 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:44:55.405 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:44:55.809 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:50:17.984 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:50:18.271 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 20:55:40.310 WARNING  at line 229: write maps - ok
+'main '2018-02-18 20:55:40.595 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:01:02.607 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:01:02.911 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:06:24.978 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:06:25.372 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:11:47.536 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:11:47.846 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:17:09.976 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:17:10.396 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:22:32.741 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:22:33.196 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:27:55.371 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:27:55.728 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:33:18.34 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:33:18.252 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:38:40.374 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:38:40.696 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:44:02.871 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:44:03.292 WARNING  at line 224: write stat - ok
+---------------------

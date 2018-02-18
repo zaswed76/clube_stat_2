@@ -230,6 +230,7 @@ class Main:
 
 
 def main():
+    print("!!!!!!!!!!!!!!!!!!!!!!")
     try:
         key = sys.argv[1]
     except IndexError:
