@@ -26507,3 +26507,23 @@ from unknown error: web view not found
 'main '2018-02-18 21:44:02.871 WARNING  at line 229: write maps - ok
 'main '2018-02-18 21:44:03.292 WARNING  at line 224: write stat - ok
 ---------------------
+'main '2018-02-18 21:49:27.337 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:49:27.645 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 21:54:49.698 WARNING  at line 229: write maps - ok
+'main '2018-02-18 21:54:50.19 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 22:00:12.192 WARNING  at line 229: write maps - ok
+'main '2018-02-18 22:00:12.617 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 22:05:34.831 WARNING  at line 229: write maps - ok
+'main '2018-02-18 22:05:35.201 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 22:10:57.285 WARNING  at line 229: write maps - ok
+'main '2018-02-18 22:10:57.915 WARNING  at line 224: write stat - ok
+---------------------
+'main '2018-02-18 22:16:24.749 ERROR  at line 193: аварийный выход
+'main '2018-02-18 22:23:46.290 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-18 22:23:53.69 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
