@@ -18,7 +18,7 @@ setup(
         install_requires=[],
         entry_points={
             'console_scripts':
-                ['stat4 = clube_stat.main:main']
+                ['stat8 = clube_stat.main:main']
         }
 
 )
