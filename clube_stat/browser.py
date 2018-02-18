@@ -47,7 +47,7 @@ class Browser:
     #     driver = webdriver.Remote(self.service.service_url,
     #                               capabilities)
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument("--ignore-certificate-errors")
+        chrome_options.add_argument("--ignore-gpu-blacklist")
         driver = webdriver.Chrome(executable_path=self.driver_pth)
         return driver
 
