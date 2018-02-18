@@ -8,6 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
 
+
 ignored_exceptions = (common.exceptions.NoSuchElementException,
                       common.exceptions.StaleElementReferenceException,)
 from clube_stat.clubs.user import User
@@ -30,8 +31,8 @@ class Browser:
         self.binary_pth = binary_pth
         self.driver_pth = driver_pth
 
-        self.service = service.Service(self.driver_pth)
-        self.service.start()
+        # self.service = service.Service(self.driver_pth)
+        # self.service.start()
         self.driver = self.get_driver()
 
 
@@ -39,13 +40,15 @@ class Browser:
         self.driver.set_window_position(-5000, 0)
 
     def get_driver(self):
-        capabilities = {'chrome.binary': self.binary_pth,
-                        'chrome.switches': ['--disable-logging']}
-        #
-        #
-        driver = webdriver.Remote(self.service.service_url,
-                                  capabilities)
-        # driver = webdriver.Chrome(executable_path=self.binary_pth)
+    #     capabilities = {'chrome.binary': self.binary_pth,
+    #                     'chrome.switches': ['--disable-logging']}
+    #     #
+    #     #
+    #     driver = webdriver.Remote(self.service.service_url,
+    #                               capabilities)
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument("--ignore-certificate-errors")
+        driver = webdriver.Chrome(executable_path=self.driver_pth)
         return driver
 
     def get_page(self):

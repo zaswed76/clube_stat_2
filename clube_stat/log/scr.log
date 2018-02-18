@@ -26545,3 +26545,14 @@ from unknown error: web view not found
 'main '2018-02-18 23:22:02.785 WARNING  at line 229: write maps - ok
 'main '2018-02-18 23:22:03.214 WARNING  at line 224: write stat - ok
 ---------------------
+'main '2018-02-18 23:59:10.734 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-18 23:59:52.710 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-19 00:00:32.622 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-19 00:02:14.908 WARNING  at line 28: open data - D:/save/serg/drop/Dropbox/data_off_on.sql
+'main '2018-02-19 00:02:20.331 WARNING  at line 46: 
+    ##### - START PROGRAM - ######
+
+'main '2018-02-19 00:02:27.944 WARNING  at line 94: open map
+'main '2018-02-19 00:02:48.486 WARNING  at line 229: write maps - ok
+'main '2018-02-19 00:02:48.807 WARNING  at line 224: write stat - ok
+---------------------
