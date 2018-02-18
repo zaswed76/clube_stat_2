@@ -48,7 +48,8 @@ class Browser:
     #                               capabilities)
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--ignore-gpu-blacklist")
-        driver = webdriver.Chrome(executable_path=self.driver_pth)
+        driver = webdriver.Chrome(executable_path=self.driver_pth,
+                                  chrome_options=chrome_options)
         return driver
 
     def get_page(self):
